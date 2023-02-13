@@ -1,0 +1,11 @@
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface _ZGRRandom : NSObject
+
+- (void)setupWithOptions:(NSMutableDictionary *)options;
+
+@end
+
+NS_ASSUME_NONNULL_END

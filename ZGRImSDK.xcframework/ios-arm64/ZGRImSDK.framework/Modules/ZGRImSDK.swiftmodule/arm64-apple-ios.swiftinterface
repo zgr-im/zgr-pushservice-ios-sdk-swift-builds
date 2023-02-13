@@ -1,0 +1,571 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ZGRImSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CoreData
+import Foundation
+import Security
+import Swift
+import UIKit
+import UserNotifications
+import WebKit
+@_exported import ZGRImSDK
+import _Concurrency
+import _StringProcessing
+import os
+@objc extension Foundation.NSDictionary {
+  @objc dynamic public func zgr_stringValueForKey(_ key: Swift.String) -> Swift.String?
+  @objc dynamic public func zgr_dictionaryForKey(_ key: Swift.String) -> [Foundation.NSDictionary]?
+  @objc dynamic public func zgr_jsonForKey(_ key: Swift.String) -> Any?
+}
+@_inheritsConvenienceInitializers @objc final public class ZGRPersistentContainer : CoreData.NSPersistentContainer {
+  @objc override final public class func defaultDirectoryURL() -> Foundation.URL
+  @objc override dynamic public init(name: Swift.String, managedObjectModel model: CoreData.NSManagedObjectModel)
+  @objc deinit
+}
+@objc public enum ZGRContentType : Swift.Int {
+  case none
+  case html
+  case image
+  case other
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc final public class ZGRContent : ObjectiveC.NSObject {
+  @objc final public var url: Foundation.URL?
+  @objc final public var rawType: Swift.String? {
+    @objc get
+  }
+  @objc public init?(url: Foundation.URL, type: ZGRImSDK.ZGRContentType)
+  @objc convenience public init?(userInfo: Foundation.NSDictionary)
+  public static func contentType(string: Swift.String) -> ZGRImSDK.ZGRContentType
+  @objc deinit
+}
+public typealias ZGRUserInfo = [Swift.String : Any]
+extension ZGRImSDK.ZGRLogger {
+  public class GenericEvent : Swift.Equatable {
+    final public let id: Foundation.UUID
+    final public let timestamp: Foundation.Date
+    final public let message: Swift.String
+    final public let userInfo: ZGRImSDK.ZGRUserInfo?
+    final public let level: ZGRImSDK.ZGRLogLevel
+    final public let category: Swift.String?
+    final public let source: ZGRImSDK.ZGRLogger.GenericEvent.Source?
+    public init(id: Foundation.UUID = .init(), timestamp: Foundation.Date = .init(), _ message: Swift.String, userInfo: ZGRImSDK.ZGRUserInfo? = nil, level: ZGRImSDK.ZGRLogLevel = .debug, category: Swift.String? = nil, source: ZGRImSDK.ZGRLogger.GenericEvent.Source? = nil)
+    convenience public init(id: Foundation.UUID = .init(), timestamp: Foundation.Date = .init(), _ message: Swift.String, userInfo: ZGRImSDK.ZGRUserInfo? = nil, level: ZGRImSDK.ZGRLogLevel = .debug, category: Swift.String? = nil, fileID: Swift.StaticString = #fileID, function: Swift.StaticString = #function, line: Swift.UInt = #line)
+    public static func == (lhs: ZGRImSDK.ZGRLogger.GenericEvent, rhs: ZGRImSDK.ZGRLogger.GenericEvent) -> Swift.Bool
+    @objc deinit
+  }
+}
+extension ZGRImSDK.ZGRLogger {
+  public class ErrorEvent : ZGRImSDK.ZGRLogger.GenericEvent {
+    final public let error: Swift.Error
+    public init(id: Foundation.UUID = .init(), timestamp: Foundation.Date = .init(), error: Swift.Error, category: Swift.String? = nil, source: ZGRImSDK.ZGRLogger.GenericEvent.Source? = nil)
+    convenience public init(id: Foundation.UUID = .init(), timestamp: Foundation.Date = .init(), error: Swift.Error, category: Swift.String? = nil, fileID: Swift.StaticString = #fileID, function: Swift.StaticString = #function, line: Swift.UInt = #line)
+    @objc deinit
+  }
+}
+extension ZGRImSDK.ZGRLogger.GenericEvent {
+  public struct Source {
+    public let fileID: Swift.StaticString
+    public let module: Swift.String
+    public let filename: Swift.String
+    public let function: Swift.StaticString
+    public let line: Swift.UInt
+    public init(fileID: Swift.StaticString = #fileID, function: Swift.StaticString = #function, line: Swift.UInt = #line)
+  }
+}
+@_inheritsConvenienceInitializers @objc(ZGRInstallationEntity) public class ZGRInstallationEntity : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+@objc public protocol ZGRNetworkProtocol : ObjectiveC.NSObjectProtocol {
+  @objc var cache: ZGRImSDK.ZGRCache? { get set }
+  @objc func enqueueRequest(_ request: ZGRImSDK.ZGRNetworkRequest)
+  @objc func enqueueRequest(_ request: ZGRImSDK.ZGRNetworkRequest, completionHandler completion: ((Foundation.Data?, Swift.Error?) -> Swift.Void)?)
+}
+@objc final public class ZGRNetwork : ObjectiveC.NSObject, ZGRImSDK.ZGRNetworkProtocol {
+  @objc final public var cache: ZGRImSDK.ZGRCache?
+  @objc public init(cache: ZGRImSDK.ZGRCache)
+  @objc final public func enqueueRequest(_ request: ZGRImSDK.ZGRNetworkRequest)
+  @objc final public func enqueueRequest(_ request: ZGRImSDK.ZGRNetworkRequest, completionHandler completion: ((Foundation.Data?, Swift.Error?) -> Swift.Void)?)
+  @objc deinit
+}
+public protocol ZGRLoggerProtocol {
+  func log(_ event: ZGRImSDK.ZGRLogger.GenericEvent)
+  func log(_ event: ZGRImSDK.ZGRLogger.ErrorEvent)
+}
+public class ZGRLogger {
+  public static var instance: ZGRImSDK.ZGRLogger
+  public static let isShownSource: Swift.Bool
+  public init(loggers: [ZGRImSDK.ZGRLoggerProtocol], queue: Dispatch.DispatchQueue = .init(label: String(describing: ZGRLogger.self)))
+  @objc deinit
+}
+extension ZGRImSDK.ZGRLogger {
+  public static func log(_ message: Swift.StaticString, userInfo: ZGRImSDK.ZGRUserInfo? = nil, level: ZGRImSDK.ZGRLogLevel = .debug, category: Swift.String? = nil, fileID: Swift.StaticString = #fileID, function: Swift.StaticString = #function, line: Swift.UInt = #line)
+  public static func log(_ error: Swift.Error, category: Swift.String? = nil, fileID: Swift.StaticString = #fileID, function: Swift.StaticString = #function, line: Swift.UInt = #line)
+}
+extension ZGRImSDK.ZGRLogger {
+  public static var defaultLoggers: [ZGRImSDK.ZGRLoggerProtocol] {
+    get
+  }
+}
+@objc final public class ZGRNotification : ObjectiveC.NSObject {
+  @objc final public var identifier: Swift.String
+  @objc final public var date: Foundation.Date
+  @objc final public var title: Swift.String?
+  @objc final public var subtitle: Swift.String?
+  @objc final public var text: Swift.String?
+  @objc final public var status: Swift.String?
+  @objc final public var urlString: Swift.String?
+  @objc final public var content: ZGRImSDK.ZGRContent?
+  @objc final public var actions: [ZGRImSDK.ZGRAction]?
+  @objc final public var customPayload: Any?
+  @objc public init?(content: UserNotifications.UNNotificationContent)
+  @objc public init?(remoteNotification: Foundation.NSDictionary)
+  @objc public init(notificationEntity: ZGRImSDK.ZGRNotificationEntity)
+  @objc deinit
+}
+open class KeychainSwift {
+  open var lastResultCode: Darwin.OSStatus
+  open var accessGroup: Swift.String?
+  open var synchronizable: Swift.Bool
+  public init()
+  public init(keyPrefix: Swift.String)
+  @discardableResult
+  open func set(_ value: Swift.String, forKey key: Swift.String, withAccess access: ZGRImSDK.KeychainSwiftAccessOptions? = nil) -> Swift.Bool
+  @discardableResult
+  open func set(_ value: Foundation.Data, forKey key: Swift.String, withAccess access: ZGRImSDK.KeychainSwiftAccessOptions? = nil) -> Swift.Bool
+  @discardableResult
+  open func set(_ value: Swift.Bool, forKey key: Swift.String, withAccess access: ZGRImSDK.KeychainSwiftAccessOptions? = nil) -> Swift.Bool
+  open func get(_ key: Swift.String) -> Swift.String?
+  open func getData(_ key: Swift.String, asReference: Swift.Bool = false) -> Foundation.Data?
+  open func getBool(_ key: Swift.String) -> Swift.Bool?
+  @discardableResult
+  open func delete(_ key: Swift.String) -> Swift.Bool
+  public var allKeys: [Swift.String] {
+    get
+  }
+  @discardableResult
+  open func clear() -> Swift.Bool
+  @objc deinit
+}
+public struct KeychainSwiftConstants {
+  public static var accessGroup: Swift.String {
+    get
+  }
+  public static var accessible: Swift.String {
+    get
+  }
+  public static var attrAccount: Swift.String {
+    get
+  }
+  public static var attrSynchronizable: Swift.String {
+    get
+  }
+  public static var klass: Swift.String {
+    get
+  }
+  public static var matchLimit: Swift.String {
+    get
+  }
+  public static var returnData: Swift.String {
+    get
+  }
+  public static var valueData: Swift.String {
+    get
+  }
+  public static var returnReference: Swift.String {
+    get
+  }
+  public static var returnAttributes: Swift.String {
+    get
+  }
+  public static var secMatchLimitAll: Swift.String {
+    get
+  }
+}
+public enum KeychainSwiftAccessOptions {
+  case accessibleWhenUnlocked
+  case accessibleWhenUnlockedThisDeviceOnly
+  case accessibleAfterFirstUnlock
+  case accessibleAfterFirstUnlockThisDeviceOnly
+  case accessibleWhenPasscodeSetThisDeviceOnly
+  public static func == (a: ZGRImSDK.KeychainSwiftAccessOptions, b: ZGRImSDK.KeychainSwiftAccessOptions) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ZGRLogLevel : Swift.String, Swift.CaseIterable {
+  case debug, info, warning, error
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [ZGRImSDK.ZGRLogLevel]
+  public typealias RawValue = Swift.String
+  public static var allCases: [ZGRImSDK.ZGRLogLevel] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension Swift.Array where Element == ZGRImSDK.ZGRLogLevel {
+  public static var allCases: [ZGRImSDK.ZGRLogLevel] {
+    get
+  }
+}
+extension ZGRImSDK.ZGRLogLevel {
+  public var icon: Swift.String {
+    get
+  }
+}
+public protocol ZGRLogLevelProvider : Swift.Error {
+  var level: ZGRImSDK.ZGRLogLevel { get }
+}
+extension Swift.Error {
+  public var level: ZGRImSDK.ZGRLogLevel {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class ZGRConfig : ObjectiveC.NSObject {
+  @objc final public var applicationId: Swift.String
+  @objc final public var apiKey: Swift.String
+  @objc final public var endpoint: Foundation.URL?
+  @objc final public var localDatabaseEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public static var sharedInstance: ZGRImSDK.ZGRConfig {
+    @objc get
+  }
+  @objc final public func resetToEmbeddedConfig()
+  @objc final public func getSDKVersion() -> Swift.String
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class ZGRMessaging : ObjectiveC.NSObject {
+  @objc final public var network: ZGRImSDK.ZGRNetworkProtocol?
+  @objc final public var database: ZGRImSDK.ZGRDatabaseProtocol?
+  @objc public static var sharedInstance: ZGRImSDK.ZGRMessaging {
+    @objc get
+  }
+  @objc final public var config: ZGRImSDK.ZGRConfig
+  @objc final public var deviceId: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc final public var installationId: Swift.String {
+    @objc get
+  }
+  final public func setToken(_ token: Foundation.Data)
+  @objc deinit
+}
+@objc extension ZGRImSDK.ZGRMessaging {
+  @objc final public func register(forRemoteNotifications: Foundation.Data)
+  @objc final public func application(_ application: UIKit.UIApplication, didReceiveRemoteNotification userInfo: Foundation.NSDictionary, withCompletionHandler completionHandler: ((ZGRImSDK.ZGRNotification) -> ())) -> Swift.Bool
+  @objc final public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceiveNotificationResponse response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: ((ZGRImSDK.ZGRNotification, ZGRImSDK.ZGRAction) -> ())?) -> Swift.Bool
+  @objc final public func notificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceiveNotificationResponse response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: ((ZGRImSDK.ZGRNotification, ZGRImSDK.ZGRAction) -> ())?) -> Swift.Bool
+  @objc final public func showLinkPageWithURL(_ url: Foundation.URL, andViewController vc: UIKit.UIViewController)
+  @objc final public func application(_ application: UIKit.UIApplication, setApplicationBadgeNumber num: Swift.Int)
+  @objc final public func checkSeensAndUpdateNotificationStatus()
+}
+@objc extension ZGRImSDK.ZGRMessaging {
+  @objc final public func fetchUser(withCompletionHandler completionHandler: @escaping (ZGRImSDK.ZGRUser?, ZGRImSDK.ZGRError?) -> ())
+  @objc final public func saveUserPhoneNumber(_ phoneNumber: Swift.String, withCompletionHandler completionHandler: @escaping (ZGRImSDK.ZGRUser?, ZGRImSDK.ZGRError?) -> ()) -> Swift.Bool
+}
+@objc extension ZGRImSDK.ZGRMessaging {
+  @objc final public func personalize(_ externalUserId: Swift.String, withCompletionHandler completionHandler: @escaping (ZGRImSDK.ZGRUser?, ZGRImSDK.ZGRError?) -> ())
+  @objc final public func depersonalize(withCompletionHandler completionHandler: @escaping (() -> ()))
+}
+@objc extension ZGRImSDK.ZGRMessaging {
+  @objc final public func fetchInstallation(withCompletionHandler completionHandler: @escaping (ZGRImSDK.ZGRInstallation?, ZGRImSDK.ZGRError?) -> ())
+  @objc final public func saveInstallation(_ installation: ZGRImSDK.ZGRInstallation, withCompletionHandler completionHandler: @escaping () -> ())
+}
+@objc extension ZGRImSDK.ZGRMessaging {
+  @objc final public var localDatabaseEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc final public func fetchAllNotifications(_ completionHandler: @escaping ([ZGRImSDK.ZGRNotification]?, ZGRImSDK.ZGRError?) -> ())
+  @objc final public func fetchNotificationsWithRequest(_ request: ZGRImSDK.ZGRDatabaseRequest, withCompletionHandler completionHandler: @escaping ([ZGRImSDK.ZGRNotification]?, ZGRImSDK.ZGRError?) -> ())
+  @objc final public func deleteNotification(_ notification: ZGRImSDK.ZGRNotification, withCompletionHandler completionHandler: @escaping (Swift.Bool, ZGRImSDK.ZGRError?) -> ())
+  @objc final public func deleteNotificationsArray(_ array: [ZGRImSDK.ZGRNotification], withCompletionHandler completionHandler: @escaping (Swift.Bool, ZGRImSDK.ZGRError?) -> ())
+  @objc final public func updateNotification(_ notification: ZGRImSDK.ZGRNotification, status stat: Swift.String, withCompletionHandler completionHandler: @escaping (Swift.Bool, ZGRImSDK.ZGRError?) -> ())
+}
+extension ZGRImSDK.ZGRActionEntity {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<ZGRImSDK.ZGRActionEntity>
+  @objc @NSManaged dynamic public var identifier: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var title: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var notification: ZGRImSDK.ZGRNotificationEntity? {
+    @objc get
+    @objc set
+  }
+}
+@_inheritsConvenienceInitializers @objc final public class ZGRDatabaseRequest : ObjectiveC.NSObject {
+  @objc final public var fetchLimit: Swift.UInt
+  @objc final public var pageOffset: Swift.UInt
+  @objc final public var fromDate: Foundation.Date?
+  @objc final public var toDate: Foundation.Date?
+  @objc final public var status: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension ZGRImSDK.ZGRInstallationEntity {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<ZGRImSDK.ZGRInstallationEntity>
+  @objc @NSManaged dynamic public var identifier: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@_inheritsConvenienceInitializers @objc final public class ZGRNetworkRequest : ObjectiveC.NSObject, Foundation.NSCoding {
+  @objc final public var category: Swift.String?
+  @objc final public var url: Foundation.URL?
+  @objc final public var method: Swift.String?
+  @objc final public var headers: [Swift.String : Any]?
+  @objc final public var body: Foundation.Data?
+  @objc override dynamic public init()
+  @objc public init(coder decoder: Foundation.NSCoder)
+  @objc final public func encode(with coder: Foundation.NSCoder)
+  @objc final public func setValue(_ value: Swift.String?, forHTTPHeader header: Swift.String)
+  @objc final public func setHTTPHeaders(_ req: [Swift.String : Any])
+  @objc final public func requestDebugDescription() -> Swift.String
+  @objc deinit
+}
+extension ZGRImSDK.ZGRNetworkRequest {
+  @objc public static func prepareRequest(_ requestParams: ZGRImSDK.ZGRNetworkRequestParams) -> ZGRImSDK.ZGRNetworkRequest?
+}
+@objc public enum ZGRSubscriptionType : Swift.Int {
+  case settings
+  case permission
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc final public class ZGRSubscription : ObjectiveC.NSObject {
+  @objc final public var identifier: Foundation.NSNumber?
+  @objc final public var rawType: Swift.String? {
+    @objc get
+  }
+  @objc final public var name: Swift.String
+  @objc final public var title: Swift.String
+  @objc final public var desc: Swift.String
+  @objc final public var value: Swift.String
+  @objc final public var dictionary: Foundation.NSDictionary {
+    @objc get
+  }
+  @objc convenience public init?(JSON: Swift.String, error: ZGRImSDK.ZGRError?)
+  @objc convenience public init?(JSONData: Foundation.Data, error: ZGRImSDK.ZGRError?)
+  @objc public init?(dictionary: Foundation.NSDictionary, error: ZGRImSDK.ZGRError?)
+  @objc final public func setValueWithBool(_ value: Swift.Bool) -> Swift.Bool
+  @objc final public func setValueWithString(_ value: Swift.String) -> Swift.Bool
+  @objc deinit
+}
+@objc public class ZGRNetworkRequestParams : ObjectiveC.NSObject {
+  @objc public init(js: Foundation.Data?, path: Swift.String, cat: Swift.String, mtd: Swift.String)
+  @objc deinit
+}
+extension ZGRImSDK.ZGRNotificationEntity {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<ZGRImSDK.ZGRNotificationEntity>
+  @objc @NSManaged dynamic public var customPayload: Foundation.Data? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var date: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var identifier: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var status: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var subtitle: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var text: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var title: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var actions: Foundation.NSSet? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var content: ZGRImSDK.ZGRContentEntity? {
+    @objc get
+    @objc set
+  }
+}
+extension ZGRImSDK.ZGRNotificationEntity {
+  @objc(addActionsObject:) @NSManaged dynamic public func addToActions(_ value: ZGRImSDK.ZGRActionEntity)
+  @objc(removeActionsObject:) @NSManaged dynamic public func removeFromActions(_ value: ZGRImSDK.ZGRActionEntity)
+  @objc(addActions:) @NSManaged dynamic public func addToActions(_ values: Foundation.NSSet)
+  @objc(removeActions:) @NSManaged dynamic public func removeFromActions(_ values: Foundation.NSSet)
+}
+@_hasMissingDesignatedInitializers @objc final public class ZGRUser : ObjectiveC.NSObject {
+  @objc final public var externalUserId: Swift.String?
+  @objc final public var phoneNumber: Swift.String?
+  @objc convenience public init?(JSON: Swift.String, error: ZGRImSDK.ZGRError?)
+  @objc convenience public init?(JSONData: Foundation.Data, error: ZGRImSDK.ZGRError?)
+  @objc deinit
+}
+extension Swift.String {
+  public static func zgr_applicationGroupIdentifier() -> Swift.String?
+  public static func hexStringFromData(_ data: Foundation.Data) -> Swift.String
+}
+@_inheritsConvenienceInitializers @objc final public class ZGRError : Foundation.NSError {
+  @objc public static let ZGRErrorDomain: Foundation.NSErrorDomain
+  @objc override dynamic public init(domain: Swift.String, code: Swift.Int, userInfo dict: [Swift.String : Any]? = nil)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class ZGRNotificationContent : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: ZGRImSDK.ZGRNotificationContent
+  @objc final public func didLoadView(_ view: UIKit.UIView)
+  @objc final public func didReceiveNotification(_ unNotification: UserNotifications.UNNotification, completionHandler: @escaping (([UserNotifications.UNNotificationAction]?) -> ()))
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension ZGRImSDK.ZGRContentEntity {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<ZGRImSDK.ZGRContentEntity>
+  @objc @NSManaged dynamic public var type: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var url: Foundation.URL? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var notification: ZGRImSDK.ZGRNotificationEntity? {
+    @objc get
+    @objc set
+  }
+}
+@_inheritsConvenienceInitializers @objc(ZGRContentEntity) public class ZGRContentEntity : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+public class OSLogger : ZGRImSDK.ZGRLoggerProtocol {
+  public init(levels: [ZGRImSDK.ZGRLogLevel])
+  public func log(_ event: ZGRImSDK.ZGRLogger.GenericEvent)
+  public func log(_ event: ZGRImSDK.ZGRLogger.ErrorEvent)
+  @objc deinit
+}
+@objc final public class ZGRInstallation : ObjectiveC.NSObject {
+  @objc final public var primary: Swift.Bool
+  @objc final public var pushOsEnabled: Swift.Bool
+  @objc final public var pushEnabled: Swift.Bool
+  @objc final public var subscriptions: [ZGRImSDK.ZGRSubscription]
+  @objc convenience public init?(JSON: Swift.String, error: ZGRImSDK.ZGRError?)
+  @objc convenience public init?(JSONData: Foundation.Data, error: ZGRImSDK.ZGRError?)
+  @objc public init?(dictionary: Foundation.NSDictionary, error: Foundation.NSError?)
+  @objc deinit
+}
+@objc final public class ZGRCache : ObjectiveC.NSObject {
+  @objc public init(path: Swift.String)
+  @objc final public func dataFromFile(_ filename: Swift.String) -> Foundation.Data?
+  @objc final public func writeToFile(_ filename: Swift.String, data: Foundation.Data?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(ZGRActionEntity) public class ZGRActionEntity : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+@objc public enum ZGRActionType : Swift.Int {
+  case defoult
+  case dismiss
+  case other
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc final public class ZGRAction : ObjectiveC.NSObject {
+  @objc final public var identifier: Swift.String
+  @objc final public var title: Swift.String
+  @objc final public var rawType: Swift.String? {
+    @objc get
+  }
+  @objc public init?(identifier: Swift.String, title: Swift.String)
+  @objc convenience public init?(dictionary: Foundation.NSDictionary)
+  @objc convenience public init?(response: UserNotifications.UNNotificationResponse)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(ZGRNotificationEntity) public class ZGRNotificationEntity : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+@objc public protocol ZGRDatabaseProtocol : ObjectiveC.NSObjectProtocol {
+  @objc static var sharedInstance: ZGRImSDK.ZGRDatabase? { get }
+  @objc func allNotifications() -> [ZGRImSDK.ZGRNotification]?
+  @objc func notifications(with request: ZGRImSDK.ZGRDatabaseRequest) -> [ZGRImSDK.ZGRNotification]?
+  @objc func deleteAllNotifications()
+  @objc func addNotification(_ notification: ZGRImSDK.ZGRNotification)
+  @objc func deleteNotification(_ notification: ZGRImSDK.ZGRNotification)
+  @objc func updateNotification(_ identifier: Swift.String, status: Swift.String)
+  @objc func getInstallationId() -> Swift.String?
+  @objc func saveInstallationId(_ installationId: Swift.String)
+  @objc func deleteNotificationsArray(_ array: [ZGRImSDK.ZGRNotification])
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class ZGRDatabase : ObjectiveC.NSObject, ZGRImSDK.ZGRDatabaseProtocol {
+  @objc public static var sharedInstance: ZGRImSDK.ZGRDatabase? {
+    @objc get
+  }
+  @objc final public func allNotifications() -> [ZGRImSDK.ZGRNotification]?
+  @objc final public func notifications(with request: ZGRImSDK.ZGRDatabaseRequest) -> [ZGRImSDK.ZGRNotification]?
+  @objc final public func deleteAllNotifications()
+  @objc final public func addNotification(_ notification: ZGRImSDK.ZGRNotification)
+  @objc final public func deleteNotification(_ notification: ZGRImSDK.ZGRNotification)
+  @objc final public func deleteNotificationsArray(_ array: [ZGRImSDK.ZGRNotification])
+  @objc final public func updateNotification(_ identifier: Swift.String, status: Swift.String)
+  @objc final public func getInstallationId() -> Swift.String?
+  @objc final public func saveInstallationId(_ installationId: Swift.String)
+  @objc deinit
+}
+@objc extension UIKit.UIDevice {
+  @objc @_Concurrency.MainActor(unsafe) public static let zgr_modelName: Swift.String
+}
+extension Foundation.NSNotification.Name {
+  public static let zgrDeviceTokenUpdated: Foundation.Notification.Name
+  public static let zgrDidReceiveRemoteNotification: Foundation.Notification.Name
+  public static let zgrDidOpenRemoteNotification: Foundation.Notification.Name
+  public static let zgrDidLaunchAppFromRemoteNotification: Foundation.Notification.Name
+}
+@objc extension Foundation.NSNotification {
+  @objc public static let zgrDeviceTokenUpdated: Foundation.Notification.Name
+  @objc public static let zgrDidReceiveRemoteNotification: Foundation.Notification.Name
+  @objc public static let zgrDidOpenRemoteNotification: Foundation.Notification.Name
+  @objc public static let zgrDidLaunchAppFromRemoteNotification: Foundation.Notification.Name
+}
+extension ZGRImSDK.ZGRContentType : Swift.Equatable {}
+extension ZGRImSDK.ZGRContentType : Swift.Hashable {}
+extension ZGRImSDK.ZGRContentType : Swift.RawRepresentable {}
+extension ZGRImSDK.KeychainSwiftAccessOptions : Swift.Equatable {}
+extension ZGRImSDK.KeychainSwiftAccessOptions : Swift.Hashable {}
+extension ZGRImSDK.ZGRLogLevel : Swift.Equatable {}
+extension ZGRImSDK.ZGRLogLevel : Swift.Hashable {}
+extension ZGRImSDK.ZGRLogLevel : Swift.RawRepresentable {}
+extension ZGRImSDK.ZGRSubscriptionType : Swift.Equatable {}
+extension ZGRImSDK.ZGRSubscriptionType : Swift.Hashable {}
+extension ZGRImSDK.ZGRSubscriptionType : Swift.RawRepresentable {}
+extension ZGRImSDK.ZGRActionType : Swift.Equatable {}
+extension ZGRImSDK.ZGRActionType : Swift.Hashable {}
+extension ZGRImSDK.ZGRActionType : Swift.RawRepresentable {}

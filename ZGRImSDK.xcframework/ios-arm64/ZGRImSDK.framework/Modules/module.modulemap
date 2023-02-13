@@ -1,0 +1,11 @@
+framework module ZGRImSDK {
+  umbrella header "ZGRImSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module ZGRImSDK.Swift {
+  header "ZGRImSDK-Swift.h"
+  requires objc
+}
