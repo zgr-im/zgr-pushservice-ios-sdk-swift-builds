@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/ZGRImSDK-Swift.h</key>
 		<data>
-		La9Qc7RISgjfpkBVikGXdIB9ugI=
+		hz4uxLD0oPT40opSu4gn8ZkS9vE=
 		</data>
 		<key>Headers/ZGRImSDK.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/ZGRNotificationService.h</key>
 		<data>
-		f+HrgTnsjms2FU+W2ywNYwDP44w=
+		9Q7W0WqhZ7MReH2m1EkvWIUNxh8=
 		</data>
 		<key>Headers/_ZGRRandom.h</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		jM/xmhn/yTVZ9R1bmmhNvQoGf+k=
+		sy+PXq+Y/9zBRLZuW3iuM6uo1Ug=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		P3EKt/f9WzHCfKdj0f4JimbjNvs=
+		LWeys94in5J+GrwgQ3enA/YZ1X0=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		P3EKt/f9WzHCfKdj0f4JimbjNvs=
+		LWeys94in5J+GrwgQ3enA/YZ1X0=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		KC3iAGV1ftD19w3l8tgWvUN94FU=
+		h6P3LCcgJ2aHQbpU0enQQd255Tg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -97,7 +97,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xIxPGiJeEO5E1FSykMj67a5MSbgSu3gFul1mJBYzDyQ=
+			e6D1pB0nFiKAc5JCOzjxhxJTNX2h8pQ3B5Zw0SYCpuY=
 			</data>
 		</dict>
 		<key>Headers/ZGRImSDK.h</key>
@@ -111,7 +111,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xrc1eJGRWmGHskIOuXgNqa8cKf1J9gxAoIeeQZwU6Hc=
+			N+QerzhizKD4WZrP8l2Ev6e2Bgv4AT6rDZ7QW2X1YZA=
 			</data>
 		</dict>
 		<key>Headers/_ZGRRandom.h</key>
@@ -125,14 +125,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			X9CfklabCptcJbHasN5Y2Aa0oL3Yh38wawrIokHpLMc=
+			pgAmx0EBMF2DzEQgu2jX2YKf/+L6OgrRAf+H3nS8XmI=
 			</data>
 		</dict>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nic0Y1dUHwaJT4ng242Y5V+RxHOONfHy9wAAXIlajq0=
+			39qH4zLAnoZpLUp+mbXEu7IKjoXuPHyKfUrjBzs9CTg=
 			</data>
 		</dict>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -146,14 +146,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nic0Y1dUHwaJT4ng242Y5V+RxHOONfHy9wAAXIlajq0=
+			39qH4zLAnoZpLUp+mbXEu7IKjoXuPHyKfUrjBzs9CTg=
 			</data>
 		</dict>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TKIK7htSAmyE/NTEumv0SX1RMr4EMg8fbvM0wF4koLM=
+			5wq1gefffGdPKNwT7NzfAPy81dalTP2XgKudvA3kOwE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

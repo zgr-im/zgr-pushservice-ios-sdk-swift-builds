@@ -619,6 +619,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ZGRNotificat
 + (ZGRNotificationContent * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (void)didLoadView:(UIView * _Nonnull)view;
 - (void)didReceiveNotification:(UNNotification * _Nonnull)unNotification completionHandler:(void (^ _Nonnull)(NSArray<UNNotificationAction *> * _Nullable))completionHandler;
+- (BOOL)isZGRNotification:(NSDictionary * _Nonnull)userInfo SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1325,6 +1326,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ZGRNotificat
 + (ZGRNotificationContent * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (void)didLoadView:(UIView * _Nonnull)view;
 - (void)didReceiveNotification:(UNNotification * _Nonnull)unNotification completionHandler:(void (^ _Nonnull)(NSArray<UNNotificationAction *> * _Nullable))completionHandler;
+- (BOOL)isZGRNotification:(NSDictionary * _Nonnull)userInfo SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

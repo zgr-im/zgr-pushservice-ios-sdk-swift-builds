@@ -440,6 +440,7 @@ extension Swift.String {
   @objc public static let sharedInstance: ZGRImSDK.ZGRNotificationContent
   @objc final public func didLoadView(_ view: UIKit.UIView)
   @objc final public func didReceiveNotification(_ unNotification: UserNotifications.UNNotification, completionHandler: @escaping (([UserNotifications.UNNotificationAction]?) -> ()))
+  @objc final public func isZGRNotification(_ userInfo: Foundation.NSDictionary) -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }

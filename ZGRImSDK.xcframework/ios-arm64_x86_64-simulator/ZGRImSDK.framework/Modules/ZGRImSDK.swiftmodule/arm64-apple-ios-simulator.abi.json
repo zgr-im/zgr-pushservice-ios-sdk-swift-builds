@@ -13511,6 +13511,36 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "isZGRNotification",
+            "printedName": "isZGRNotification(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSDictionary",
+                "printedName": "Foundation.NSDictionary",
+                "usr": "c:objc(cs)NSDictionary"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ZGRImSDK@objc(cs)ZGRNotificationContent(im)isZGRNotification:",
+            "mangledName": "$s8ZGRImSDK22ZGRNotificationContentC02isC0ySbSo12NSDictionaryCF",
+            "moduleName": "ZGRImSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -21230,28 +21260,28 @@
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
       "kind": "StringLiteral",
-      "offset": 645,
+      "offset": 644,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
       "kind": "StringLiteral",
-      "offset": 677,
+      "offset": 676,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
       "kind": "StringLiteral",
-      "offset": 708,
+      "offset": 707,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
       "kind": "StringLiteral",
-      "offset": 745,
+      "offset": 744,
       "length": 2,
       "value": "\"\""
     },
@@ -21412,1169 +21442,1295 @@
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 657,
-      "length": 9,
-      "value": "\"iPod5,1\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
-      "kind": "StringLiteral",
-      "offset": 707,
-      "length": 29,
-      "value": "\"iPod touch (5th generation)\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
-      "kind": "StringLiteral",
-      "offset": 754,
-      "length": 9,
-      "value": "\"iPod7,1\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
-      "kind": "StringLiteral",
-      "offset": 804,
-      "length": 29,
-      "value": "\"iPod touch (6th generation)\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
-      "kind": "StringLiteral",
-      "offset": 851,
-      "length": 9,
-      "value": "\"iPod9,1\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
-      "kind": "StringLiteral",
-      "offset": 901,
-      "length": 29,
-      "value": "\"iPod touch (7th generation)\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
-      "kind": "StringLiteral",
-      "offset": 948,
+      "offset": 633,
       "length": 11,
       "value": "\"iPhone3,1\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 961,
+      "offset": 646,
       "length": 11,
       "value": "\"iPhone3,2\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 974,
+      "offset": 659,
       "length": 11,
       "value": "\"iPhone3,3\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 998,
+      "offset": 691,
       "length": 10,
       "value": "\"iPhone 4\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1026,
+      "offset": 719,
       "length": 11,
       "value": "\"iPhone4,1\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1076,
+      "offset": 777,
       "length": 11,
       "value": "\"iPhone 4s\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1105,
+      "offset": 806,
       "length": 11,
       "value": "\"iPhone5,1\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1118,
+      "offset": 819,
       "length": 11,
       "value": "\"iPhone5,2\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1155,
+      "offset": 864,
       "length": 10,
       "value": "\"iPhone 5\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1183,
+      "offset": 892,
       "length": 11,
       "value": "\"iPhone5,3\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1196,
+      "offset": 905,
       "length": 11,
       "value": "\"iPhone5,4\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1233,
+      "offset": 950,
       "length": 11,
       "value": "\"iPhone 5c\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1262,
+      "offset": 979,
       "length": 11,
       "value": "\"iPhone6,1\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1275,
+      "offset": 992,
       "length": 11,
       "value": "\"iPhone6,2\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1312,
+      "offset": 1037,
       "length": 11,
       "value": "\"iPhone 5s\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1341,
+      "offset": 1066,
       "length": 11,
       "value": "\"iPhone7,2\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1391,
+      "offset": 1124,
       "length": 10,
       "value": "\"iPhone 6\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1419,
+      "offset": 1152,
       "length": 11,
       "value": "\"iPhone7,1\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1469,
+      "offset": 1210,
       "length": 15,
       "value": "\"iPhone 6 Plus\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1502,
+      "offset": 1243,
       "length": 11,
       "value": "\"iPhone8,1\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1552,
+      "offset": 1301,
       "length": 11,
       "value": "\"iPhone 6s\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1581,
+      "offset": 1330,
       "length": 11,
       "value": "\"iPhone8,2\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1631,
+      "offset": 1388,
       "length": 16,
       "value": "\"iPhone 6s Plus\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1665,
+      "offset": 1422,
       "length": 11,
       "value": "\"iPhone8,4\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1715,
+      "offset": 1480,
       "length": 11,
       "value": "\"iPhone SE\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1744,
+      "offset": 1509,
       "length": 11,
       "value": "\"iPhone9,1\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1757,
+      "offset": 1522,
       "length": 11,
       "value": "\"iPhone9,3\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1794,
+      "offset": 1567,
       "length": 10,
       "value": "\"iPhone 7\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1822,
+      "offset": 1595,
       "length": 11,
       "value": "\"iPhone9,2\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1835,
+      "offset": 1608,
       "length": 11,
       "value": "\"iPhone9,4\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1872,
+      "offset": 1653,
       "length": 15,
       "value": "\"iPhone 7 Plus\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1905,
+      "offset": 1686,
       "length": 12,
       "value": "\"iPhone10,1\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1919,
+      "offset": 1700,
       "length": 12,
       "value": "\"iPhone10,4\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1955,
+      "offset": 1744,
       "length": 10,
       "value": "\"iPhone 8\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1983,
+      "offset": 1772,
       "length": 12,
       "value": "\"iPhone10,2\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1997,
+      "offset": 1786,
       "length": 12,
       "value": "\"iPhone10,5\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2033,
+      "offset": 1830,
       "length": 15,
       "value": "\"iPhone 8 Plus\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2066,
+      "offset": 1863,
       "length": 12,
       "value": "\"iPhone10,3\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2080,
+      "offset": 1877,
       "length": 12,
       "value": "\"iPhone10,6\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2116,
+      "offset": 1921,
       "length": 10,
       "value": "\"iPhone X\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2144,
+      "offset": 1949,
       "length": 12,
       "value": "\"iPhone11,2\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2194,
+      "offset": 2007,
       "length": 11,
       "value": "\"iPhone XS\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2223,
+      "offset": 2036,
       "length": 12,
       "value": "\"iPhone11,4\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2237,
+      "offset": 2050,
       "length": 12,
       "value": "\"iPhone11,6\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2273,
+      "offset": 2094,
       "length": 15,
       "value": "\"iPhone XS Max\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2306,
+      "offset": 2127,
       "length": 12,
       "value": "\"iPhone11,8\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2356,
+      "offset": 2185,
       "length": 11,
       "value": "\"iPhone XR\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2385,
+      "offset": 2214,
       "length": 12,
       "value": "\"iPhone12,1\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2435,
+      "offset": 2272,
       "length": 11,
       "value": "\"iPhone 11\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2464,
+      "offset": 2301,
       "length": 12,
       "value": "\"iPhone12,3\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2514,
+      "offset": 2359,
       "length": 15,
       "value": "\"iPhone 11 Pro\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2547,
+      "offset": 2392,
       "length": 12,
       "value": "\"iPhone12,5\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2597,
+      "offset": 2450,
       "length": 19,
       "value": "\"iPhone 11 Pro Max\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2634,
+      "offset": 2487,
       "length": 12,
       "value": "\"iPhone12,8\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2684,
+      "offset": 2545,
       "length": 28,
       "value": "\"iPhone SE (2nd generation)\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2730,
+      "offset": 2591,
       "length": 12,
       "value": "\"iPhone13,1\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2780,
+      "offset": 2649,
       "length": 16,
       "value": "\"iPhone 12 mini\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2814,
+      "offset": 2683,
       "length": 12,
       "value": "\"iPhone13,2\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2864,
+      "offset": 2741,
       "length": 11,
       "value": "\"iPhone 12\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2893,
+      "offset": 2770,
       "length": 12,
       "value": "\"iPhone13,3\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2943,
+      "offset": 2828,
       "length": 15,
       "value": "\"iPhone 12 Pro\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2976,
+      "offset": 2861,
       "length": 12,
       "value": "\"iPhone13,4\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3026,
+      "offset": 2919,
       "length": 19,
       "value": "\"iPhone 12 Pro Max\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3063,
+      "offset": 2956,
+      "length": 12,
+      "value": "\"iPhone14,4\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3014,
+      "length": 16,
+      "value": "\"iPhone 13 mini\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3048,
+      "length": 12,
+      "value": "\"iPhone14,5\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3106,
+      "length": 11,
+      "value": "\"iPhone 13\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3135,
+      "length": 12,
+      "value": "\"iPhone14,2\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3193,
+      "length": 15,
+      "value": "\"iPhone 13 Pro\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3226,
+      "length": 12,
+      "value": "\"iPhone14,3\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3284,
+      "length": 19,
+      "value": "\"iPhone 13 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3321,
+      "length": 12,
+      "value": "\"iPhone14,6\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3379,
+      "length": 28,
+      "value": "\"iPhone SE (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3425,
+      "length": 12,
+      "value": "\"iPhone14,7\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3483,
+      "length": 11,
+      "value": "\"iPhone 14\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3512,
+      "length": 12,
+      "value": "\"iPhone14,8\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3570,
+      "length": 16,
+      "value": "\"iPhone 14 Plus\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3604,
+      "length": 12,
+      "value": "\"iPhone15,2\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3662,
+      "length": 15,
+      "value": "\"iPhone 14 Pro\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3695,
+      "length": 12,
+      "value": "\"iPhone15,3\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3753,
+      "length": 19,
+      "value": "\"iPhone 14 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3790,
       "length": 9,
       "value": "\"iPad2,1\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3074,
+      "offset": 3801,
       "length": 9,
       "value": "\"iPad2,2\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3085,
+      "offset": 3812,
       "length": 9,
       "value": "\"iPad2,3\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3096,
+      "offset": 3823,
       "length": 9,
       "value": "\"iPad2,4\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3113,
+      "offset": 3848,
       "length": 8,
       "value": "\"iPad 2\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3139,
+      "offset": 3874,
       "length": 9,
       "value": "\"iPad3,1\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3150,
+      "offset": 3885,
       "length": 9,
       "value": "\"iPad3,2\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3161,
+      "offset": 3896,
       "length": 9,
       "value": "\"iPad3,3\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3189,
+      "offset": 3932,
       "length": 23,
       "value": "\"iPad (3rd generation)\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3230,
+      "offset": 3973,
       "length": 9,
       "value": "\"iPad3,4\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3241,
+      "offset": 3984,
       "length": 9,
       "value": "\"iPad3,5\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3252,
+      "offset": 3995,
       "length": 9,
       "value": "\"iPad3,6\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3280,
+      "offset": 4031,
       "length": 23,
       "value": "\"iPad (4th generation)\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3321,
+      "offset": 4072,
       "length": 10,
       "value": "\"iPad6,11\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3333,
+      "offset": 4084,
       "length": 10,
       "value": "\"iPad6,12\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3371,
+      "offset": 4130,
       "length": 23,
       "value": "\"iPad (5th generation)\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3412,
+      "offset": 4171,
       "length": 9,
       "value": "\"iPad7,5\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3423,
+      "offset": 4182,
       "length": 9,
       "value": "\"iPad7,6\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3462,
+      "offset": 4229,
       "length": 23,
       "value": "\"iPad (6th generation)\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3503,
+      "offset": 4270,
       "length": 10,
       "value": "\"iPad7,11\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3515,
+      "offset": 4282,
       "length": 10,
       "value": "\"iPad7,12\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3553,
+      "offset": 4328,
       "length": 23,
       "value": "\"iPad (7th generation)\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3594,
+      "offset": 4369,
       "length": 10,
       "value": "\"iPad11,6\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3606,
+      "offset": 4381,
       "length": 10,
       "value": "\"iPad11,7\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3644,
+      "offset": 4427,
       "length": 23,
       "value": "\"iPad (8th generation)\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3685,
+      "offset": 4468,
+      "length": 10,
+      "value": "\"iPad12,1\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 4480,
+      "length": 10,
+      "value": "\"iPad12,2\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 4526,
+      "length": 23,
+      "value": "\"iPad (9th generation)\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 4567,
       "length": 9,
       "value": "\"iPad4,1\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3696,
+      "offset": 4578,
       "length": 9,
       "value": "\"iPad4,2\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3707,
+      "offset": 4589,
       "length": 9,
       "value": "\"iPad4,3\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3735,
+      "offset": 4625,
       "length": 10,
       "value": "\"iPad Air\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3763,
+      "offset": 4653,
       "length": 9,
       "value": "\"iPad5,3\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3774,
+      "offset": 4664,
       "length": 9,
       "value": "\"iPad5,4\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3813,
+      "offset": 4711,
       "length": 12,
       "value": "\"iPad Air 2\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3843,
+      "offset": 4741,
       "length": 10,
       "value": "\"iPad11,3\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3855,
+      "offset": 4753,
       "length": 10,
       "value": "\"iPad11,4\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3893,
+      "offset": 4799,
       "length": 27,
       "value": "\"iPad Air (3rd generation)\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3938,
+      "offset": 4844,
       "length": 10,
       "value": "\"iPad13,1\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3950,
+      "offset": 4856,
       "length": 10,
       "value": "\"iPad13,2\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3988,
+      "offset": 4902,
       "length": 27,
       "value": "\"iPad Air (4th generation)\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4033,
+      "offset": 4947,
+      "length": 11,
+      "value": "\"iPad13,16\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 4960,
+      "length": 11,
+      "value": "\"iPad13,17\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 5005,
+      "length": 27,
+      "value": "\"iPad Air (5th generation)\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 5050,
       "length": 9,
       "value": "\"iPad2,5\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4044,
+      "offset": 5061,
       "length": 9,
       "value": "\"iPad2,6\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4055,
+      "offset": 5072,
       "length": 9,
       "value": "\"iPad2,7\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4083,
+      "offset": 5108,
       "length": 11,
       "value": "\"iPad mini\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4112,
+      "offset": 5137,
       "length": 9,
       "value": "\"iPad4,4\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4123,
+      "offset": 5148,
       "length": 9,
       "value": "\"iPad4,5\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4134,
+      "offset": 5159,
       "length": 9,
       "value": "\"iPad4,6\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4162,
+      "offset": 5195,
       "length": 13,
       "value": "\"iPad mini 2\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4193,
+      "offset": 5226,
       "length": 9,
       "value": "\"iPad4,7\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4204,
+      "offset": 5237,
       "length": 9,
       "value": "\"iPad4,8\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4215,
+      "offset": 5248,
       "length": 9,
       "value": "\"iPad4,9\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4243,
+      "offset": 5284,
       "length": 13,
       "value": "\"iPad mini 3\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4274,
+      "offset": 5315,
       "length": 9,
       "value": "\"iPad5,1\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4285,
+      "offset": 5326,
       "length": 9,
       "value": "\"iPad5,2\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4324,
+      "offset": 5373,
       "length": 13,
       "value": "\"iPad mini 4\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4355,
+      "offset": 5404,
       "length": 10,
       "value": "\"iPad11,1\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4367,
+      "offset": 5416,
       "length": 10,
       "value": "\"iPad11,2\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4405,
+      "offset": 5462,
       "length": 28,
       "value": "\"iPad mini (5th generation)\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4451,
+      "offset": 5508,
+      "length": 10,
+      "value": "\"iPad14,1\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 5520,
+      "length": 10,
+      "value": "\"iPad14,2\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 5566,
+      "length": 28,
+      "value": "\"iPad mini (6th generation)\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 5612,
       "length": 9,
       "value": "\"iPad6,3\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4462,
+      "offset": 5623,
       "length": 9,
       "value": "\"iPad6,4\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4501,
+      "offset": 5670,
       "length": 21,
       "value": "\"iPad Pro (9.7-inch)\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4540,
+      "offset": 5709,
       "length": 9,
       "value": "\"iPad7,3\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4551,
+      "offset": 5720,
       "length": 9,
       "value": "\"iPad7,4\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4590,
+      "offset": 5767,
       "length": 22,
       "value": "\"iPad Pro (10.5-inch)\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4630,
+      "offset": 5807,
       "length": 9,
       "value": "\"iPad8,1\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4641,
+      "offset": 5818,
       "length": 9,
       "value": "\"iPad8,2\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4652,
+      "offset": 5829,
       "length": 9,
       "value": "\"iPad8,3\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4663,
+      "offset": 5840,
       "length": 9,
       "value": "\"iPad8,4\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4680,
+      "offset": 5865,
       "length": 37,
       "value": "\"iPad Pro (11-inch) (1st generation)\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4735,
+      "offset": 5920,
       "length": 9,
       "value": "\"iPad8,9\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4746,
+      "offset": 5931,
       "length": 10,
       "value": "\"iPad8,10\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4785,
+      "offset": 5978,
       "length": 37,
       "value": "\"iPad Pro (11-inch) (2nd generation)\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4840,
+      "offset": 6033,
       "length": 9,
       "value": "\"iPad6,7\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4851,
+      "offset": 6044,
       "length": 9,
       "value": "\"iPad6,8\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4890,
+      "offset": 6091,
       "length": 39,
       "value": "\"iPad Pro (12.9-inch) (1st generation)\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4947,
+      "offset": 6148,
       "length": 9,
       "value": "\"iPad7,1\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4958,
+      "offset": 6159,
       "length": 9,
       "value": "\"iPad7,2\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4997,
+      "offset": 6206,
       "length": 39,
       "value": "\"iPad Pro (12.9-inch) (2nd generation)\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5054,
+      "offset": 6263,
       "length": 9,
       "value": "\"iPad8,5\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5065,
+      "offset": 6274,
       "length": 9,
       "value": "\"iPad8,6\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5076,
+      "offset": 6285,
       "length": 9,
       "value": "\"iPad8,7\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5087,
+      "offset": 6296,
       "length": 9,
       "value": "\"iPad8,8\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5104,
+      "offset": 6321,
       "length": 39,
       "value": "\"iPad Pro (12.9-inch) (3rd generation)\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5161,
+      "offset": 6378,
       "length": 10,
       "value": "\"iPad8,11\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5173,
+      "offset": 6390,
       "length": 10,
       "value": "\"iPad8,12\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5211,
+      "offset": 6436,
       "length": 39,
       "value": "\"iPad Pro (12.9-inch) (4th generation)\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5268,
-      "length": 12,
-      "value": "\"AppleTV5,3\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
-      "kind": "StringLiteral",
-      "offset": 5318,
+      "offset": 6493,
       "length": 10,
-      "value": "\"Apple TV\""
+      "value": "\"iPad13,8\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5346,
-      "length": 12,
-      "value": "\"AppleTV6,2\""
+      "offset": 6505,
+      "length": 10,
+      "value": "\"iPad13,9\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5396,
-      "length": 13,
-      "value": "\"Apple TV 4K\""
+      "offset": 6517,
+      "length": 11,
+      "value": "\"iPad13,10\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5427,
-      "length": 19,
-      "value": "\"AudioAccessory1,1\""
+      "offset": 6530,
+      "length": 11,
+      "value": "\"iPad13,11\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5477,
-      "length": 9,
-      "value": "\"HomePod\""
+      "offset": 6551,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (5th generation)\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5504,
-      "length": 19,
-      "value": "\"AudioAccessory5,1\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
-      "kind": "StringLiteral",
-      "offset": 5554,
-      "length": 14,
-      "value": "\"HomePod mini\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
-      "kind": "StringLiteral",
-      "offset": 5586,
+      "offset": 6608,
       "length": 6,
       "value": "\"i386\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5594,
+      "offset": 6616,
       "length": 8,
       "value": "\"x86_64\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5636,
+      "offset": 6666,
       "length": 104,
       "value": "\"Simulator \""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5699,
+      "offset": 6729,
       "length": 28,
       "value": "\"SIMULATOR_MODEL_IDENTIFIER\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5732,
+      "offset": 6762,
       "length": 5,
       "value": "\"iOS\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5739,
+      "offset": 6769,
       "length": 1,
       "value": "\"\""
     },
