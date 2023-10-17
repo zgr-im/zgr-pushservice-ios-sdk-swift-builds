@@ -120,6 +120,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -474,6 +481,126 @@
         "name": "ZGRContent",
         "printedName": "ZGRContent",
         "children": [
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ZGRImSDK.ZGRContentType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ZGRContentType",
+                    "printedName": "ZGRImSDK.ZGRContentType",
+                    "usr": "c:@M@ZGRImSDK@E@ZGRContentType"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8ZGRImSDK10ZGRContentC4typeAA0C4TypeOSgvp",
+            "mangledName": "$s8ZGRImSDK10ZGRContentC4typeAA0C4TypeOSgvp",
+            "moduleName": "ZGRImSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ZGRImSDK.ZGRContentType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZGRContentType",
+                        "printedName": "ZGRImSDK.ZGRContentType",
+                        "usr": "c:@M@ZGRImSDK@E@ZGRContentType"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ZGRImSDK10ZGRContentC4typeAA0C4TypeOSgvg",
+                "mangledName": "$s8ZGRImSDK10ZGRContentC4typeAA0C4TypeOSgvg",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ZGRImSDK.ZGRContentType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZGRContentType",
+                        "printedName": "ZGRImSDK.ZGRContentType",
+                        "usr": "c:@M@ZGRImSDK@E@ZGRContentType"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ZGRImSDK10ZGRContentC4typeAA0C4TypeOSgvs",
+                "mangledName": "$s8ZGRImSDK10ZGRContentC4typeAA0C4TypeOSgvs",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ZGRImSDK10ZGRContentC4typeAA0C4TypeOSgvM",
+                "mangledName": "$s8ZGRImSDK10ZGRContentC4typeAA0C4TypeOSgvM",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
           {
             "kind": "Var",
             "name": "url",
@@ -2019,6 +2146,57 @@
                 "declKind": "Accessor",
                 "usr": "s:8ZGRImSDK9ZGRLoggerC13isShownSourceSbvgZ",
                 "mangledName": "$s8ZGRImSDK9ZGRLoggerC13isShownSourceSbvgZ",
+                "moduleName": "ZGRImSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isLoggerEnabled",
+            "printedName": "isLoggerEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8ZGRImSDK9ZGRLoggerC15isLoggerEnabledSbvpZ",
+            "mangledName": "$s8ZGRImSDK9ZGRLoggerC15isLoggerEnabledSbvpZ",
+            "moduleName": "ZGRImSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ZGRImSDK9ZGRLoggerC15isLoggerEnabledSbvgZ",
+                "mangledName": "$s8ZGRImSDK9ZGRLoggerC15isLoggerEnabledSbvgZ",
                 "moduleName": "ZGRImSDK",
                 "static": true,
                 "implicit": true,
@@ -8628,6 +8806,40 @@
           },
           {
             "kind": "Function",
+            "name": "updateNotification",
+            "printedName": "updateNotification(_:forNotification:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ZGRImSDK@objc(cs)ZGRMessaging(im)updateNotification:forNotification:",
+            "mangledName": "$s8ZGRImSDK12ZGRMessagingC18updateNotification_03forE0ySS_SStF",
+            "moduleName": "ZGRImSDK",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "checkSeensAndUpdateNotificationStatus",
             "printedName": "checkSeensAndUpdateNotificationStatus()",
             "children": [
@@ -8640,6 +8852,28 @@
             "declKind": "Func",
             "usr": "c:@CM@ZGRImSDK@objc(cs)ZGRMessaging(im)checkSeensAndUpdateNotificationStatus",
             "mangledName": "$s8ZGRImSDK12ZGRMessagingC37checkSeensAndUpdateNotificationStatusyyF",
+            "moduleName": "ZGRImSDK",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkIsPushGranted",
+            "printedName": "checkIsPushGranted()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ZGRImSDK@objc(cs)ZGRMessaging(im)checkIsPushGranted",
+            "mangledName": "$s8ZGRImSDK12ZGRMessagingC18checkIsPushGrantedyyF",
             "moduleName": "ZGRImSDK",
             "declAttributes": [
               "Final",
@@ -8788,6 +9022,89 @@
             "usr": "c:@CM@ZGRImSDK@objc(cs)ZGRMessaging(im)saveUserPhoneNumber:withCompletionHandler:",
             "mangledName": "$s8ZGRImSDK12ZGRMessagingC19saveUserPhoneNumber_21withCompletionHandlerSbSS_yAA7ZGRUserCSg_AA8ZGRErrorCSgtctF",
             "moduleName": "ZGRImSDK",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "saveUser",
+            "printedName": "saveUser(phoneNumber:externalUserId:withCompletionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ZGRImSDK.ZGRUser?, ZGRImSDK.ZGRError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(ZGRImSDK.ZGRUser?, ZGRImSDK.ZGRError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "ZGRImSDK.ZGRUser?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ZGRUser",
+                            "printedName": "ZGRImSDK.ZGRUser",
+                            "usr": "c:@M@ZGRImSDK@objc(cs)ZGRUser"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "ZGRImSDK.ZGRError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ZGRError",
+                            "printedName": "ZGRImSDK.ZGRError",
+                            "usr": "c:@M@ZGRImSDK@objc(cs)ZGRError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ZGRImSDK@objc(cs)ZGRMessaging(im)saveUserWithPhoneNumber:externalUserId:withCompletionHandler:",
+            "mangledName": "$s8ZGRImSDK12ZGRMessagingC8saveUser11phoneNumber08externalE2Id21withCompletionHandlerSbSS_SSyAA7ZGRUserCSg_AA8ZGRErrorCSgtctF",
+            "moduleName": "ZGRImSDK",
+            "objc_name": "saveUserWithPhoneNumber:externalUserId:withCompletionHandler:",
             "declAttributes": [
               "Final",
               "ObjC"
@@ -11622,6 +11939,126 @@
           },
           {
             "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ZGRImSDK.ZGRSubscriptionType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ZGRSubscriptionType",
+                    "printedName": "ZGRImSDK.ZGRSubscriptionType",
+                    "usr": "c:@M@ZGRImSDK@E@ZGRSubscriptionType"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8ZGRImSDK15ZGRSubscriptionC4typeAA0C4TypeOSgvp",
+            "mangledName": "$s8ZGRImSDK15ZGRSubscriptionC4typeAA0C4TypeOSgvp",
+            "moduleName": "ZGRImSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ZGRImSDK.ZGRSubscriptionType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZGRSubscriptionType",
+                        "printedName": "ZGRImSDK.ZGRSubscriptionType",
+                        "usr": "c:@M@ZGRImSDK@E@ZGRSubscriptionType"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ZGRImSDK15ZGRSubscriptionC4typeAA0C4TypeOSgvg",
+                "mangledName": "$s8ZGRImSDK15ZGRSubscriptionC4typeAA0C4TypeOSgvg",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ZGRImSDK.ZGRSubscriptionType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZGRSubscriptionType",
+                        "printedName": "ZGRImSDK.ZGRSubscriptionType",
+                        "usr": "c:@M@ZGRImSDK@E@ZGRSubscriptionType"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ZGRImSDK15ZGRSubscriptionC4typeAA0C4TypeOSgvs",
+                "mangledName": "$s8ZGRImSDK15ZGRSubscriptionC4typeAA0C4TypeOSgvs",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ZGRImSDK15ZGRSubscriptionC4typeAA0C4TypeOSgvM",
+                "mangledName": "$s8ZGRImSDK15ZGRSubscriptionC4typeAA0C4TypeOSgvM",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "rawType",
             "printedName": "rawType",
             "children": [
@@ -13092,6 +13529,470 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "UserNotifications",
+        "printedName": "UserNotifications",
+        "declKind": "Import",
+        "moduleName": "ZGRImSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ZGRNotificationService",
+        "printedName": "ZGRNotificationService",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "contentHandler",
+            "printedName": "contentHandler",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UserNotifications.UNNotificationContent) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UserNotifications.UNNotificationContent) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UNNotificationContent",
+                        "printedName": "UserNotifications.UNNotificationContent",
+                        "usr": "c:objc(cs)UNNotificationContent"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8ZGRImSDK22ZGRNotificationServiceC14contentHandlerySo21UNNotificationContentCcSgvp",
+            "mangledName": "$s8ZGRImSDK22ZGRNotificationServiceC14contentHandlerySo21UNNotificationContentCcSgvp",
+            "moduleName": "ZGRImSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((UserNotifications.UNNotificationContent) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(UserNotifications.UNNotificationContent) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UNNotificationContent",
+                            "printedName": "UserNotifications.UNNotificationContent",
+                            "usr": "c:objc(cs)UNNotificationContent"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ZGRImSDK22ZGRNotificationServiceC14contentHandlerySo21UNNotificationContentCcSgvg",
+                "mangledName": "$s8ZGRImSDK22ZGRNotificationServiceC14contentHandlerySo21UNNotificationContentCcSgvg",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((UserNotifications.UNNotificationContent) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(UserNotifications.UNNotificationContent) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UNNotificationContent",
+                            "printedName": "UserNotifications.UNNotificationContent",
+                            "usr": "c:objc(cs)UNNotificationContent"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ZGRImSDK22ZGRNotificationServiceC14contentHandlerySo21UNNotificationContentCcSgvs",
+                "mangledName": "$s8ZGRImSDK22ZGRNotificationServiceC14contentHandlerySo21UNNotificationContentCcSgvs",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ZGRImSDK22ZGRNotificationServiceC14contentHandlerySo21UNNotificationContentCcSgvM",
+                "mangledName": "$s8ZGRImSDK22ZGRNotificationServiceC14contentHandlerySo21UNNotificationContentCcSgvM",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bestContent",
+            "printedName": "bestContent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UserNotifications.UNMutableNotificationContent?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UNMutableNotificationContent",
+                    "printedName": "UserNotifications.UNMutableNotificationContent",
+                    "usr": "c:objc(cs)UNMutableNotificationContent"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8ZGRImSDK22ZGRNotificationServiceC11bestContentSo021UNMutableNotificationF0CSgvp",
+            "mangledName": "$s8ZGRImSDK22ZGRNotificationServiceC11bestContentSo021UNMutableNotificationF0CSgvp",
+            "moduleName": "ZGRImSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UserNotifications.UNMutableNotificationContent?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UNMutableNotificationContent",
+                        "printedName": "UserNotifications.UNMutableNotificationContent",
+                        "usr": "c:objc(cs)UNMutableNotificationContent"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ZGRImSDK22ZGRNotificationServiceC11bestContentSo021UNMutableNotificationF0CSgvg",
+                "mangledName": "$s8ZGRImSDK22ZGRNotificationServiceC11bestContentSo021UNMutableNotificationF0CSgvg",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UserNotifications.UNMutableNotificationContent?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UNMutableNotificationContent",
+                        "printedName": "UserNotifications.UNMutableNotificationContent",
+                        "usr": "c:objc(cs)UNMutableNotificationContent"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ZGRImSDK22ZGRNotificationServiceC11bestContentSo021UNMutableNotificationF0CSgvs",
+                "mangledName": "$s8ZGRImSDK22ZGRNotificationServiceC11bestContentSo021UNMutableNotificationF0CSgvs",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ZGRImSDK22ZGRNotificationServiceC11bestContentSo021UNMutableNotificationF0CSgvM",
+                "mangledName": "$s8ZGRImSDK22ZGRNotificationServiceC11bestContentSo021UNMutableNotificationF0CSgvM",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "zgr_didReceive",
+            "printedName": "zgr_didReceive(_:withContentHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UNNotificationRequest",
+                "printedName": "UserNotifications.UNNotificationRequest",
+                "usr": "c:objc(cs)UNNotificationRequest"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UserNotifications.UNNotificationContent) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UNNotificationContent",
+                    "printedName": "UserNotifications.UNNotificationContent",
+                    "usr": "c:objc(cs)UNNotificationContent"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8ZGRImSDK22ZGRNotificationServiceC14zgr_didReceive_18withContentHandlerySo21UNNotificationRequestC_ySo0kI0CctF",
+            "mangledName": "$s8ZGRImSDK22ZGRNotificationServiceC14zgr_didReceive_18withContentHandlerySo21UNNotificationRequestC_ySo0kI0CctF",
+            "moduleName": "ZGRImSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "zgr_serviceExtensionTimeWillExpire",
+            "printedName": "zgr_serviceExtensionTimeWillExpire()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8ZGRImSDK22ZGRNotificationServiceC34zgr_serviceExtensionTimeWillExpireyyF",
+            "mangledName": "$s8ZGRImSDK22ZGRNotificationServiceC34zgr_serviceExtensionTimeWillExpireyyF",
+            "moduleName": "ZGRImSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isZGRNotification",
+            "printedName": "isZGRNotification(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSDictionary",
+                "printedName": "Foundation.NSDictionary",
+                "usr": "c:objc(cs)NSDictionary"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8ZGRImSDK22ZGRNotificationServiceC02isC0ySbSo12NSDictionaryCF",
+            "mangledName": "$s8ZGRImSDK22ZGRNotificationServiceC02isC0ySbSo12NSDictionaryCF",
+            "moduleName": "ZGRImSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ZGRNotificationService",
+                "printedName": "ZGRImSDK.ZGRNotificationService",
+                "usr": "c:@M@ZGRImSDK@objc(cs)ZGRNotificationService"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ZGRImSDK@objc(cs)ZGRNotificationService(im)init",
+            "mangledName": "$s8ZGRImSDK22ZGRNotificationServiceCACycfc",
+            "moduleName": "ZGRImSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ZGRImSDK@objc(cs)ZGRNotificationService",
+        "mangledName": "$s8ZGRImSDK22ZGRNotificationServiceC",
+        "moduleName": "ZGRImSDK",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UNNotificationServiceExtension",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UserNotifications.UNNotificationServiceExtension",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZGRImSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "ZGRError",
         "printedName": "ZGRError",
@@ -13632,6 +14533,82 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ZGRImSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ZGRSDKVersionProvider",
+        "printedName": "ZGRSDKVersionProvider",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sdkVersion",
+            "printedName": "sdkVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8ZGRImSDK21ZGRSDKVersionProviderC10sdkVersionSSvpZ",
+            "mangledName": "$s8ZGRImSDK21ZGRSDKVersionProviderC10sdkVersionSSvpZ",
+            "moduleName": "ZGRImSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ZGRImSDK21ZGRSDKVersionProviderC10sdkVersionSSvgZ",
+                "mangledName": "$s8ZGRImSDK21ZGRSDKVersionProviderC10sdkVersionSSvgZ",
+                "moduleName": "ZGRImSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:8ZGRImSDK21ZGRSDKVersionProviderC",
+        "mangledName": "$s8ZGRImSDK21ZGRSDKVersionProviderC",
+        "moduleName": "ZGRImSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
       },
       {
         "kind": "Import",
@@ -15487,6 +16464,212 @@
           },
           {
             "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@ZGRImSDK@objc(cs)ZGRActionEntity(py)type",
+            "mangledName": "$s8ZGRImSDK15ZGRActionEntityC4typeSSSgvp",
+            "moduleName": "ZGRImSDK",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@ZGRImSDK@objc(cs)ZGRActionEntity(im)type",
+                "mangledName": "$s8ZGRImSDK15ZGRActionEntityC4typeSSSgvg",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@ZGRImSDK@objc(cs)ZGRActionEntity(im)setType:",
+                "mangledName": "$s8ZGRImSDK15ZGRActionEntityC4typeSSSgvs",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "urlString",
+            "printedName": "urlString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@ZGRImSDK@objc(cs)ZGRActionEntity(py)urlString",
+            "mangledName": "$s8ZGRImSDK15ZGRActionEntityC9urlStringSSSgvp",
+            "moduleName": "ZGRImSDK",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@ZGRImSDK@objc(cs)ZGRActionEntity(im)urlString",
+                "mangledName": "$s8ZGRImSDK15ZGRActionEntityC9urlStringSSSgvg",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@ZGRImSDK@objc(cs)ZGRActionEntity(im)setUrlString:",
+                "mangledName": "$s8ZGRImSDK15ZGRActionEntityC9urlStringSSSgvs",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "notification",
             "printedName": "notification",
             "children": [
@@ -15702,8 +16885,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "defoult",
-            "printedName": "defoult",
+            "name": "default",
+            "printedName": "default",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -15733,8 +16916,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@ZGRImSDK@E@ZGRActionType@ZGRActionTypeDefoult",
-            "mangledName": "$s8ZGRImSDK13ZGRActionTypeO7defoultyA2CmF",
+            "usr": "c:@M@ZGRImSDK@E@ZGRActionType@ZGRActionTypeDefault",
+            "mangledName": "$s8ZGRImSDK13ZGRActionTypeO7defaultyA2CmF",
             "moduleName": "ZGRImSDK",
             "declAttributes": [
               "ObjC"
@@ -16151,6 +17334,225 @@
           },
           {
             "kind": "Var",
+            "name": "urlString",
+            "printedName": "urlString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ZGRImSDK@objc(cs)ZGRAction(py)urlString",
+            "mangledName": "$s8ZGRImSDK9ZGRActionC9urlStringSSvp",
+            "moduleName": "ZGRImSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ZGRImSDK@objc(cs)ZGRAction(im)urlString",
+                "mangledName": "$s8ZGRImSDK9ZGRActionC9urlStringSSvg",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ZGRImSDK@objc(cs)ZGRAction(im)setUrlString:",
+                "mangledName": "$s8ZGRImSDK9ZGRActionC9urlStringSSvs",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ZGRImSDK9ZGRActionC9urlStringSSvM",
+                "mangledName": "$s8ZGRImSDK9ZGRActionC9urlStringSSvM",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ZGRImSDK.ZGRActionType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ZGRActionType",
+                    "printedName": "ZGRImSDK.ZGRActionType",
+                    "usr": "c:@M@ZGRImSDK@E@ZGRActionType"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8ZGRImSDK9ZGRActionC4typeAA0C4TypeOSgvp",
+            "mangledName": "$s8ZGRImSDK9ZGRActionC4typeAA0C4TypeOSgvp",
+            "moduleName": "ZGRImSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ZGRImSDK.ZGRActionType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZGRActionType",
+                        "printedName": "ZGRImSDK.ZGRActionType",
+                        "usr": "c:@M@ZGRImSDK@E@ZGRActionType"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ZGRImSDK9ZGRActionC4typeAA0C4TypeOSgvg",
+                "mangledName": "$s8ZGRImSDK9ZGRActionC4typeAA0C4TypeOSgvg",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ZGRImSDK.ZGRActionType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ZGRActionType",
+                        "printedName": "ZGRImSDK.ZGRActionType",
+                        "usr": "c:@M@ZGRImSDK@E@ZGRActionType"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ZGRImSDK9ZGRActionC4typeAA0C4TypeOSgvs",
+                "mangledName": "$s8ZGRImSDK9ZGRActionC4typeAA0C4TypeOSgvs",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ZGRImSDK9ZGRActionC4typeAA0C4TypeOSgvM",
+                "mangledName": "$s8ZGRImSDK9ZGRActionC4typeAA0C4TypeOSgvM",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "rawType",
             "printedName": "rawType",
             "children": [
@@ -16214,7 +17616,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(identifier:title:)",
+            "printedName": "init(identifier:title:urlString:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -16241,13 +17643,19 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@ZGRImSDK@objc(cs)ZGRAction(im)initWithIdentifier:title:",
-            "mangledName": "$s8ZGRImSDK9ZGRActionC10identifier5titleACSgSS_SStcfc",
+            "usr": "c:@M@ZGRImSDK@objc(cs)ZGRAction(im)initWithIdentifier:title:urlString:",
+            "mangledName": "$s8ZGRImSDK9ZGRActionC10identifier5title9urlStringACSgSS_S2Stcfc",
             "moduleName": "ZGRImSDK",
-            "objc_name": "initWithIdentifier:title:",
+            "objc_name": "initWithIdentifier:title:urlString:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -17234,6 +18642,109 @@
                 "declKind": "Accessor",
                 "usr": "c:@CM@ZGRImSDK@objc(cs)ZGRNotificationEntity(im)setTitle:",
                 "mangledName": "$s8ZGRImSDK21ZGRNotificationEntityC5titleSSSgvs",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "urlString",
+            "printedName": "urlString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@ZGRImSDK@objc(cs)ZGRNotificationEntity(py)urlString",
+            "mangledName": "$s8ZGRImSDK21ZGRNotificationEntityC9urlStringSSSgvp",
+            "moduleName": "ZGRImSDK",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@ZGRImSDK@objc(cs)ZGRNotificationEntity(im)urlString",
+                "mangledName": "$s8ZGRImSDK21ZGRNotificationEntityC9urlStringSSSgvg",
+                "moduleName": "ZGRImSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@ZGRImSDK@objc(cs)ZGRNotificationEntity(im)setUrlString:",
+                "mangledName": "$s8ZGRImSDK21ZGRNotificationEntityC9urlStringSSSgvs",
                 "moduleName": "ZGRImSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -18834,6 +20345,60 @@
         "children": [
           {
             "kind": "Function",
+            "name": "urlEncode",
+            "printedName": "urlEncode()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SS8ZGRImSDKE9urlEncodeSSSgyF",
+            "mangledName": "$sSS8ZGRImSDKE9urlEncodeSSSgyF",
+            "moduleName": "ZGRImSDK",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "urlDecode",
+            "printedName": "urlDecode()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SS8ZGRImSDKE9urlDecodeSSSgyF",
+            "mangledName": "$sSS8ZGRImSDKE9urlDecodeSSSgyF",
+            "moduleName": "ZGRImSDK",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "zgr_applicationGroupIdentifier",
             "printedName": "zgr_applicationGroupIdentifier()",
             "children": [
@@ -20010,48 +21575,39 @@
           },
           {
             "kind": "Conformance",
-            "name": "DataProtocol",
-            "printedName": "DataProtocol",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
             "children": [
               {
                 "kind": "TypeWitness",
-                "name": "Regions",
-                "printedName": "Regions",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "CollectionOfOne",
-                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.UInt8]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UInt8",
-                            "printedName": "Swift.UInt8",
-                            "usr": "s:s5UInt8V"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:s15CollectionOfOneV"
+                    "name": "NSArray",
+                    "printedName": "Foundation.NSArray",
+                    "usr": "c:objc(cs)NSArray"
                   }
                 ]
               }
             ],
-            "usr": "s:10Foundation12DataProtocolP",
-            "mangledName": "$s10Foundation12DataProtocolP"
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
           },
           {
             "kind": "Conformance",
-            "name": "MutableDataProtocol",
-            "printedName": "MutableDataProtocol",
-            "usr": "s:10Foundation19MutableDataProtocolP",
-            "mangledName": "$s10Foundation19MutableDataProtocolP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ContiguousBytes",
+            "printedName": "ContiguousBytes",
+            "usr": "s:10Foundation15ContiguousBytesP",
+            "mangledName": "$s10Foundation15ContiguousBytesP"
           },
           {
             "kind": "Conformance",
@@ -20097,39 +21653,48 @@
           },
           {
             "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
+            "name": "DataProtocol",
+            "printedName": "DataProtocol",
             "children": [
               {
                 "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
+                "name": "Regions",
+                "printedName": "Regions",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "NSArray",
-                    "printedName": "Foundation.NSArray",
-                    "usr": "c:objc(cs)NSArray"
+                    "name": "CollectionOfOne",
+                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.UInt8]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt8",
+                            "printedName": "Swift.UInt8",
+                            "usr": "s:s5UInt8V"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s15CollectionOfOneV"
                   }
                 ]
               }
             ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
+            "usr": "s:10Foundation12DataProtocolP",
+            "mangledName": "$s10Foundation12DataProtocolP"
           },
           {
             "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ContiguousBytes",
-            "printedName": "ContiguousBytes",
-            "usr": "s:10Foundation15ContiguousBytesP",
-            "mangledName": "$s10Foundation15ContiguousBytesP"
+            "name": "MutableDataProtocol",
+            "printedName": "MutableDataProtocol",
+            "usr": "s:10Foundation19MutableDataProtocolP",
+            "mangledName": "$s10Foundation19MutableDataProtocolP"
           }
         ]
       },
@@ -20222,8 +21787,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "Custom",
               "HasStorage",
+              "Custom",
               "ObjC"
             ],
             "isFromExtension": true,
@@ -20929,6 +22494,132 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Dictionary+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 266,
+      "length": 10,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Dictionary+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 275,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Dictionary+ZGR.swift",
+      "kind": "IntegerLiteral",
+      "offset": 310,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Dictionary+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 330,
+      "length": 8,
+      "value": "\"<null>\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Dictionary+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 357,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Dictionary+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 496,
+      "length": 3,
+      "value": "\"%\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Dictionary+ZGR.swift",
+      "kind": "IntegerLiteral",
+      "offset": 623,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Dictionary+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 719,
+      "length": 13,
+      "value": "\"[ЁёА-я]\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Dictionary+ZGR.swift",
+      "kind": "IntegerLiteral",
+      "offset": 856,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Dictionary+ZGR.swift",
+      "kind": "IntegerLiteral",
+      "offset": 921,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Dictionary+ZGR.swift",
+      "kind": "IntegerLiteral",
+      "offset": 962,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Dictionary+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 1046,
+      "length": 5,
+      "value": "\"%20\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Dictionary+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 1059,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Dictionary+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 1283,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Dictionary+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 1294,
+      "length": 5,
+      "value": "\"%20\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Dictionary+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 1410,
+      "length": 14,
+      "value": "\"NSDictionary\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Dictionary+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 1508,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Dictionary+ZGR.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1654,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
       "kind": "IntegerLiteral",
       "offset": 125,
@@ -20987,6 +22678,97 @@
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
       "kind": "StringLiteral",
+      "offset": 564,
+      "length": 6,
+      "value": "\"html\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
+      "kind": "StringLiteral",
+      "offset": 599,
+      "length": 7,
+      "value": "\"image\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
+      "kind": "StringLiteral",
+      "offset": 635,
+      "length": 7,
+      "value": "\"other\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
+      "kind": "StringLiteral",
+      "offset": 1023,
+      "length": 17,
+      "value": "\"zgr-content-url\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
+      "kind": "StringLiteral",
+      "offset": 1182,
+      "length": 22,
+      "value": "\"zgr-content-category\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
+      "kind": "StringLiteral",
+      "offset": 1273,
+      "length": 7,
+      "value": "\"image\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
+      "kind": "StringLiteral",
+      "offset": 1304,
+      "length": 6,
+      "value": "\"html\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
+      "kind": "StringLiteral",
+      "offset": 1333,
+      "length": 7,
+      "value": "\"other\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
+      "kind": "StringLiteral",
+      "offset": 1575,
+      "length": 17,
+      "value": "\"zgr-content-url\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
+      "kind": "StringLiteral",
+      "offset": 1862,
+      "length": 22,
+      "value": "\"zgr-content-category\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
+      "kind": "StringLiteral",
+      "offset": 2137,
+      "length": 7,
+      "value": "\"image\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
+      "kind": "StringLiteral",
+      "offset": 2184,
+      "length": 6,
+      "value": "\"html\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
+      "kind": "StringLiteral",
+      "offset": 2229,
+      "length": 7,
+      "value": "\"other\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
+      "kind": "StringLiteral",
       "offset": 293,
       "length": 10,
       "value": "\"ZGRImSDK.ZGRContent\""
@@ -20994,9 +22776,58 @@
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/ZGRLoggerEvents.swift",
       "kind": "StringLiteral",
+      "offset": 2464,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/ZGRLoggerEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 2504,
+      "length": 3,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/ZGRLoggerEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 2696,
+      "length": 3,
+      "value": "\"(\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/ZGRLoggerEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 2866,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/ZGRLoggerEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 2941,
+      "length": 3,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/ZGRLoggerEvents.swift",
+      "kind": "StringLiteral",
       "offset": 1965,
       "length": 10,
       "value": "\"ZGRImSDK.ErrorEvent\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/ZGRLoggerEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 3892,
+      "length": 3,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/ZGRLoggerEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 3949,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
@@ -21105,6 +22936,97 @@
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1650,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2715,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2723,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 3306,
+      "length": 34,
+      "value": "\" operation started one more time\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 3353,
+      "length": 9,
+      "value": "\"request\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 3398,
+      "length": 9,
+      "value": "\"Network\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3485,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 4007,
+      "length": 40,
+      "value": "\" can't extract data from ZGRCACHE_FILE\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 4074,
+      "length": 9,
+      "value": "\"Network\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 4275,
+      "length": 10,
+      "value": "\"requests\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 4506,
+      "length": 9,
+      "value": "\"Network\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4868,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 4921,
+      "length": 10,
+      "value": "\"requests\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
       "kind": "StringLiteral",
       "offset": 988,
       "length": 10,
@@ -21118,11 +23040,228 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/ZGRLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 725,
+      "length": 12,
+      "value": "\"SDK_LOGGER\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/ZGRLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 771,
+      "length": 5,
+      "value": "\"YES\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/ZGRLogger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 802,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
       "kind": "StringLiteral",
       "offset": 227,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 882,
+      "length": 14,
+      "value": "\" init called\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 909,
+      "length": 9,
+      "value": "\"content\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 954,
+      "length": 14,
+      "value": "\"Notification\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 1143,
+      "length": 24,
+      "value": "\" identifier.length = 0\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 1194,
+      "length": 14,
+      "value": "\"Notification\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 1701,
+      "length": 14,
+      "value": "\" init called\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 1728,
+      "length": 20,
+      "value": "\"remoteNotification\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 1795,
+      "length": 14,
+      "value": "\"Notification\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 1938,
+      "length": 24,
+      "value": "\" identifier.length = 0\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 1989,
+      "length": 14,
+      "value": "\"Notification\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 2145,
+      "length": 5,
+      "value": "\"aps\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 2197,
+      "length": 7,
+      "value": "\"alert\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 2251,
+      "length": 7,
+      "value": "\"title\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 2274,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 2306,
+      "length": 10,
+      "value": "\"subtitle\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 2332,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 2360,
+      "length": 6,
+      "value": "\"body\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 2382,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 2720,
+      "length": 14,
+      "value": "\" init called\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 2747,
+      "length": 20,
+      "value": "\"notificationEntity\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 2814,
+      "length": 14,
+      "value": "\"Notification\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 3785,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 4401,
+      "length": 21,
+      "value": "\"zgr-notification-id\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 4757,
+      "length": 13,
+      "value": "\"zgr-actions\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 4944,
+      "length": 9,
+      "value": "\"options\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 5005,
+      "length": 6,
+      "value": "\"link\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 5025,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "kind": "StringLiteral",
+      "offset": 5324,
+      "length": 20,
+      "value": "\"zgr-custom-payload\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
@@ -21148,9 +23287,177 @@
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
       "kind": "BooleanLiteral",
+      "offset": 2344,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3783,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "kind": "Array",
+      "offset": 4643,
+      "length": 3,
+      "value": "[1]"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "kind": "Array",
+      "offset": 4649,
+      "length": 3,
+      "value": "[0]"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5212,
+      "length": 6,
+      "value": "-67853"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "kind": "BooleanLiteral",
       "offset": 5680,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6424,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7173,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7931,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7984,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8036,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8237,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "kind": "Array",
+      "offset": 8576,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "kind": "Array",
+      "offset": 8601,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9230,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10021,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "kind": "StringLiteral",
+      "offset": 10278,
+      "length": 20,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "kind": "StringLiteral",
+      "offset": 10291,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "kind": "StringLiteral",
+      "offset": 10297,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11377,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11384,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/ZGRLogLevel.swift",
+      "kind": "StringLiteral",
+      "offset": 384,
+      "length": 6,
+      "value": "\"🛠\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/ZGRLogLevel.swift",
+      "kind": "StringLiteral",
+      "offset": 430,
+      "length": 8,
+      "value": "\"ℹ️\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/ZGRLogLevel.swift",
+      "kind": "StringLiteral",
+      "offset": 481,
+      "length": 8,
+      "value": "\"⚠️\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/ZGRLogLevel.swift",
+      "kind": "StringLiteral",
+      "offset": 530,
+      "length": 5,
+      "value": "\"❌\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
@@ -21188,11 +23495,1348 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 741,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1560,
+      "length": 94,
+      "value": "\"ZGRImSDK: You must enabled application capability `App Groups` and add `App Group ID` entry.\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1685,
+      "length": 73,
+      "value": "\"Enable application capability `App Groups` and add `App Group ID` entry\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2567,
+      "length": 60,
+      "value": "\"Error resetToEmbeddedConfig: \""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2626,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2927,
+      "length": 15,
+      "value": "\"applicationId\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2973,
+      "length": 8,
+      "value": "\"apiKey\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3005,
+      "length": 13,
+      "value": "\"endpointURL\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3295,
+      "length": 57,
+      "value": "\"Error synchronize config: \""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3351,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3379,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3490,
+      "length": 11,
+      "value": "\"ZGRConfig\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3511,
+      "length": 6,
+      "value": "\"json\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3799,
+      "length": 15,
+      "value": "\"applicationId\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3846,
+      "length": 8,
+      "value": "\"apiKey\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 3904,
+      "length": 13,
+      "value": "\"endpointURL\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4123,
+      "length": 50,
+      "value": "\"Error load config: \""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4172,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
       "kind": "StringLiteral",
       "offset": 126,
       "length": 17,
       "value": "\"deviceToken.bin\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 529,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 980,
+      "length": 16,
+      "value": "\"zgr.im.network\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 1554,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 1720,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 2293,
+      "length": 16,
+      "value": "\"installationID\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 2469,
+      "length": 16,
+      "value": "\"installationID\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 4191,
+      "length": 42,
+      "value": "\" notificationCenter.didReceive response.\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 4259,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 4482,
+      "length": 46,
+      "value": "\" can't create notification or selectedAction\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 4555,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4587,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 4667,
+      "length": 8,
+      "value": "\"Swiped\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 4678,
+      "length": 8,
+      "value": "\"Opened\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 4970,
+      "length": 14,
+      "value": "\"notification\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5594,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6001,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6268,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 6608,
+      "length": 16,
+      "value": "\"notificationId\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 6638,
+      "length": 8,
+      "value": "\"status\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 6782,
+      "length": 22,
+      "value": "\"\/notification\/status\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 6893,
+      "length": 22,
+      "value": "\" notification status\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 6960,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 7065,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 7246,
+      "length": 37,
+      "value": "\" set notification status on backend\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 7310,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 7425,
+      "length": 8,
+      "value": "\"Opened\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 7519,
+      "length": 6,
+      "value": "\"Seen\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 7557,
+      "length": 48,
+      "value": "\" set notification status as 'Seen' in database\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 7632,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 7754,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 9120,
+      "length": 45,
+      "value": "\" application.didReceiveNotification called.\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 9227,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 9366,
+      "length": 42,
+      "value": "\" can't create notification from userInfo\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 9435,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9467,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 9513,
+      "length": 11,
+      "value": "\"Delivered\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9953,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10142,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 10149,
+      "length": 6,
+      "value": "\"true\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 10158,
+      "length": 7,
+      "value": "\"false\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 10192,
+      "length": 5,
+      "value": "\"Ios\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 10299,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10487,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 10551,
+      "length": 41,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 10557,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 10591,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 10651,
+      "length": 4,
+      "value": "\"os\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 10673,
+      "length": 11,
+      "value": "\"osVersion\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 10709,
+      "length": 12,
+      "value": "\"sdkVersion\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 10747,
+      "length": 12,
+      "value": "\"appVersion\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 10785,
+      "length": 8,
+      "value": "\"vendor\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 10795,
+      "length": 7,
+      "value": "\"Apple\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 10816,
+      "length": 7,
+      "value": "\"model\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 10861,
+      "length": 8,
+      "value": "\"osLang\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 10899,
+      "length": 7,
+      "value": "\"store\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 10908,
+      "length": 10,
+      "value": "\"appStore\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 10932,
+      "length": 10,
+      "value": "\"timezone\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 11046,
+      "length": 16,
+      "value": "\"installationId\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 11093,
+      "length": 10,
+      "value": "\"deviceId\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 11127,
+      "length": 7,
+      "value": "\"token\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 11158,
+      "length": 8,
+      "value": "\"pushOs\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 11192,
+      "length": 6,
+      "value": "\"meta\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 11467,
+      "length": 8,
+      "value": "\"\/token\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 11497,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 11678,
+      "length": 47,
+      "value": "\" send token, settings and metadata to backend\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 11771,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 11879,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12458,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 12662,
+      "length": 5,
+      "value": "\"New\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12976,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13426,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13915,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14087,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 14465,
+      "length": 6,
+      "value": "\"Seen\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 14612,
+      "length": 37,
+      "value": "\" error updating notification status\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 14676,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 15007,
+      "length": 28,
+      "value": "\"\/profile\/\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 15034,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 15113,
+      "length": 19,
+      "value": "\" fetchUser called\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 15145,
+      "length": 6,
+      "value": "\"path\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 15184,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 15284,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 15629,
+      "length": 18,
+      "value": "\" zgrUser created\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 15660,
+      "length": 9,
+      "value": "\"zgrUser\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 15702,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15991,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 16065,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 16324,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16358,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 16439,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 16518,
+      "length": 57,
+      "value": "\" can't transform phoneNumber into formattedPhoneNumber \""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 16588,
+      "length": 22,
+      "value": "\"formattedPhoneNumber\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 16660,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16696,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 16773,
+      "length": 16,
+      "value": "\"installationId\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16847,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 16871,
+      "length": 7,
+      "value": "\"phone\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16947,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 16971,
+      "length": 16,
+      "value": "\"externalUserId\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 17038,
+      "length": 18,
+      "value": "\" saveUser called\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 17101,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 17262,
+      "length": 17,
+      "value": "\"\/profile\/update\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 17434,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17529,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 17814,
+      "length": 16,
+      "value": "\" zgrUser saved\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 17843,
+      "length": 9,
+      "value": "\"zgrUser\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 17885,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 18078,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 18204,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 18376,
+      "length": 23,
+      "value": "\" phoneNumber.isEmpty \""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 18426,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 18563,
+      "length": 3,
+      "value": "\"+\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 18574,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 18603,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 18614,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 18643,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 18654,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 18683,
+      "length": 3,
+      "value": "\"(\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 18694,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 18723,
+      "length": 3,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 18734,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18773,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 18860,
+      "length": 10,
+      "value": "\"7\\d{10}\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "Array",
+      "offset": 18881,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "Array",
+      "offset": 18943,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18972,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19002,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 19126,
+      "length": 24,
+      "value": "\" invalid phone passed \""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 19163,
+      "length": 13,
+      "value": "\"phoneNumber\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 19217,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 19589,
+      "length": 33,
+      "value": "\" invalid externalUserId passed \""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 19635,
+      "length": 16,
+      "value": "\"externalUserId\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 19695,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 19775,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 20013,
+      "length": 16,
+      "value": "\"installationId\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 20173,
+      "length": 22,
+      "value": "\"\/installation\/logout\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 20355,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 20597,
+      "length": 29,
+      "value": "\" depersonalize current user\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 20671,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 20898,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 21250,
+      "length": 33,
+      "value": "\"\/installation\/\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 21282,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 21431,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 21792,
+      "length": 26,
+      "value": "\" zgrInstallation created\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 21831,
+      "length": 17,
+      "value": "\"zgrInstallation\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 21881,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 22164,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 22171,
+      "length": 6,
+      "value": "\"true\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 22180,
+      "length": 7,
+      "value": "\"false\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 22242,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 22249,
+      "length": 6,
+      "value": "\"true\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 22258,
+      "length": 7,
+      "value": "\"false\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 22541,
+      "length": 16,
+      "value": "\"installationId\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 22587,
+      "length": 9,
+      "value": "\"primary\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 22619,
+      "length": 13,
+      "value": "\"pushEnabled\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 22659,
+      "length": 10,
+      "value": "\"settings\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 22847,
+      "length": 22,
+      "value": "\"\/installation\/update\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 23029,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 23271,
+      "length": 24,
+      "value": "\" zgrInstallation saved\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 23340,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 23498,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 24241,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 25046,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 25824,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 25867,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26077,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 26567,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26610,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26819,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 27329,
+      "length": 11,
+      "value": "\"Messaging\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 27372,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "kind": "BooleanLiteral",
+      "offset": 27605,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/Entities\/ZGRActionEntity+CoreDataProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 274,
+      "length": 8,
+      "value": "\"Action\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Database\/ZGRDatabaseRequest.swift",
@@ -21223,6 +24867,41 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/ROT13.swift",
+      "kind": "IntegerLiteral",
+      "offset": 265,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/ROT13.swift",
+      "kind": "IntegerLiteral",
+      "offset": 271,
+      "length": 2,
+      "value": "26"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/ROT13.swift",
+      "kind": "IntegerLiteral",
+      "offset": 297,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/ROT13.swift",
+      "kind": "IntegerLiteral",
+      "offset": 303,
+      "length": 2,
+      "value": "26"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/Entities\/ZGRInstallationEntity+CoreDataProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 298,
+      "length": 14,
+      "value": "\"Installation\""
+    },
+    {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
       "kind": "BooleanLiteral",
       "offset": 235,
@@ -21238,12 +24917,397 @@
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 591,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 617,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 776,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 998,
+      "length": 11,
+      "value": "\"executing\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1032,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 1068,
+      "length": 11,
+      "value": "\"executing\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 1122,
+      "length": 10,
+      "value": "\"finished\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1154,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 1191,
+      "length": 10,
+      "value": "\"finished\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 1738,
+      "length": 25,
+      "value": "\" data task with request\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 1776,
+      "length": 12,
+      "value": "\"urlRequest\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 1827,
+      "length": 18,
+      "value": "\"NetworkOperation\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 2136,
+      "length": 11,
+      "value": "\"executing\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2179,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 2225,
+      "length": 11,
+      "value": "\"executing\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 2292,
+      "length": 10,
+      "value": "\"finished\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2333,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 2378,
+      "length": 10,
+      "value": "\"finished\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
       "kind": "StringLiteral",
       "offset": 165,
       "length": 26,
       "value": "\"ZGRImSDK.ZGRNetworkRequestOperation\""
     },
     {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 812,
+      "length": 10,
+      "value": "\"category\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 878,
+      "length": 5,
+      "value": "\"url\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 939,
+      "length": 8,
+      "value": "\"method\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1007,
+      "length": 9,
+      "value": "\"headers\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1080,
+      "length": 6,
+      "value": "\"body\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1199,
+      "length": 10,
+      "value": "\"category\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1245,
+      "length": 5,
+      "value": "\"url\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1289,
+      "length": 8,
+      "value": "\"method\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1337,
+      "length": 9,
+      "value": "\"headers\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1383,
+      "length": 6,
+      "value": "\"body\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2079,
+      "length": 8,
+      "value": "\"K-Fnyg\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2127,
+      "length": 13,
+      "value": "\"K-Fvtangher\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2180,
+      "length": 6,
+      "value": "\"fnyg\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2226,
+      "length": 8,
+      "value": "\"erfhyg\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2258,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2280,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2312,
+      "length": 18,
+      "value": "\"X-Application-Id\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2403,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2436,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2567,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2752,
+      "length": 15,
+      "value": "\"    \""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2764,
+      "length": 1,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2820,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2856,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2859,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2890,
+      "length": 88,
+      "value": "\"TXMPNetworkRequest(\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2917,
+      "length": 1,
+      "value": "\" { URL: \""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2951,
+      "length": 1,
+      "value": "\" \n    Method: \""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2975,
+      "length": 1,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2993,
+      "length": 52,
+      "value": "\"    Headers: \""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 3016,
+      "length": 1,
+      "value": "\"\n    Body: \n\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 3043,
+      "length": 1,
+      "value": "\"}\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 3398,
+      "length": 6,
+      "value": "\"body\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 3412,
+      "length": 14,
+      "value": "\"relativePath\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 3456,
+      "length": 8,
+      "value": "\"apiKey\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 3525,
+      "length": 14,
+      "value": "\"relativePath\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 3569,
+      "length": 8,
+      "value": "\"apiKey\""
+    },
+    {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
       "kind": "IntegerLiteral",
       "offset": 154,
@@ -21260,30 +25324,254 @@
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
       "kind": "StringLiteral",
-      "offset": 644,
+      "offset": 546,
+      "length": 9,
+      "value": "\"SETTING\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 589,
+      "length": 12,
+      "value": "\"PERMISSION\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 651,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
       "kind": "StringLiteral",
-      "offset": 676,
+      "offset": 683,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
       "kind": "StringLiteral",
-      "offset": 707,
+      "offset": 714,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
       "kind": "StringLiteral",
-      "offset": 744,
+      "offset": 751,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 890,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 935,
+      "length": 6,
+      "value": "\"type\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 979,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 1024,
+      "length": 7,
+      "value": "\"title\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 1069,
+      "length": 13,
+      "value": "\"description\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 1157,
+      "length": 6,
+      "value": "\"true\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1166,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1173,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 1218,
+      "length": 7,
+      "value": "\"value\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 1285,
+      "length": 7,
+      "value": "\"value\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 1907,
+      "length": 63,
+      "value": "\"Error creating json from data - \""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 1969,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 2138,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 2190,
+      "length": 6,
+      "value": "\"type\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 2212,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 2289,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 2311,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 2341,
+      "length": 7,
+      "value": "\"title\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 2364,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 2415,
+      "length": 13,
+      "value": "\"description\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 2433,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 2485,
+      "length": 7,
+      "value": "\"value\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 2497,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2696,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 2733,
+      "length": 6,
+      "value": "\"true\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 2742,
+      "length": 7,
+      "value": "\"false\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2765,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2949,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2999,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 3138,
+      "length": 12,
+      "value": "\"PERMISSION\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
@@ -21300,11 +25588,249 @@
       "value": "\"ZGRImSDK.ZGRNetworkRequestParams\""
     },
     {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/Entities\/ZGRNotificationEntity+CoreDataProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 298,
+      "length": 14,
+      "value": "\"Notification\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/User\/ZGRUser.swift",
+      "kind": "StringLiteral",
+      "offset": 789,
+      "length": 63,
+      "value": "\"Error creating json from data - \""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/User\/ZGRUser.swift",
+      "kind": "StringLiteral",
+      "offset": 851,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/User\/ZGRUser.swift",
+      "kind": "StringLiteral",
+      "offset": 1032,
+      "length": 16,
+      "value": "\"externalUserId\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/User\/ZGRUser.swift",
+      "kind": "StringLiteral",
+      "offset": 1105,
+      "length": 7,
+      "value": "\"phone\""
+    },
+    {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/User\/ZGRUser.swift",
       "kind": "StringLiteral",
       "offset": 105,
       "length": 7,
       "value": "\"ZGRImSDK.ZGRUser\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/String+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 570,
+      "length": 3,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/String+ZGR.swift",
+      "kind": "BooleanLiteral",
+      "offset": 626,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/String+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 657,
+      "length": 7,
+      "value": "\"group\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/String+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 735,
+      "length": 15,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/String+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 749,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/String+ZGR.swift",
+      "kind": "BooleanLiteral",
+      "offset": 929,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/String+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 1126,
+      "length": 8,
+      "value": "\"<null>\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/String+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 1164,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/String+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 1190,
+      "length": 6,
+      "value": "\"%02x\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 316,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
+      "kind": "StringLiteral",
+      "offset": 628,
+      "length": 24,
+      "value": "\" zgr_didReceive called\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
+      "kind": "StringLiteral",
+      "offset": 678,
+      "length": 21,
+      "value": "\"NotificationService\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 870,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
+      "kind": "StringLiteral",
+      "offset": 1076,
+      "length": 5,
+      "value": "\"New\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1122,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
+      "kind": "StringLiteral",
+      "offset": 1525,
+      "length": 7,
+      "value": "\"image\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
+      "kind": "StringLiteral",
+      "offset": 2192,
+      "length": 16,
+      "value": "\"notificationId\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
+      "kind": "StringLiteral",
+      "offset": 2235,
+      "length": 8,
+      "value": "\"status\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
+      "kind": "StringLiteral",
+      "offset": 2245,
+      "length": 11,
+      "value": "\"Delivered\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
+      "kind": "StringLiteral",
+      "offset": 2392,
+      "length": 22,
+      "value": "\"\/notification\/status\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
+      "kind": "StringLiteral",
+      "offset": 2511,
+      "length": 52,
+      "value": "\" set notification status as 'Delivered' at backend\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
+      "kind": "StringLiteral",
+      "offset": 2608,
+      "length": 21,
+      "value": "\"NotificationService\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
+      "kind": "StringLiteral",
+      "offset": 2727,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
+      "kind": "StringLiteral",
+      "offset": 2995,
+      "length": 21,
+      "value": "\"NotificationService\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
+      "kind": "StringLiteral",
+      "offset": 3652,
+      "length": 21,
+      "value": "\"zgr-notification-id\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
+      "kind": "StringLiteral",
+      "offset": 3844,
+      "length": 41,
+      "value": "\" zgr_loadNotificationAttachment called \""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
+      "kind": "StringLiteral",
+      "offset": 3911,
+      "length": 21,
+      "value": "\"NotificationService\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
+      "kind": "StringLiteral",
+      "offset": 4467,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
+      "kind": "StringLiteral",
+      "offset": 4653,
+      "length": 21,
+      "value": "\"NotificationService\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/ZGRError.swift",
@@ -21326,6 +25852,321 @@
       "offset": 378,
       "length": 16,
       "value": "\"ZGRErrorDomain\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 731,
+      "length": 32,
+      "value": "\" didReceiveNotification called\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 776,
+      "length": 16,
+      "value": "\"unNotification\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 835,
+      "length": 21,
+      "value": "\"NotificationContent\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 1339,
+      "length": 20,
+      "value": "\" imageView created\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 1386,
+      "length": 21,
+      "value": "\"NotificationContent\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 1950,
+      "length": 28,
+      "value": "\" animatedImageView created\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 2005,
+      "length": 21,
+      "value": "\"NotificationContent\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 2603,
+      "length": 18,
+      "value": "\" webView created\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 2648,
+      "length": 21,
+      "value": "\"NotificationContent\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2781,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 3151,
+      "length": 21,
+      "value": "\"zgr-notification-id\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "FloatLiteral",
+      "offset": 3472,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 4514,
+      "length": 6,
+      "value": "\"Seen\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 4619,
+      "length": 48,
+      "value": "\" set notification status as 'Seen' in database\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 4694,
+      "length": 21,
+      "value": "\"NotificationContent\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 4890,
+      "length": 14,
+      "value": "\"notification\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 5055,
+      "length": 16,
+      "value": "\"notificationId\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 5085,
+      "length": 8,
+      "value": "\"status\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 5095,
+      "length": 8,
+      "value": "\"Opened\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 5239,
+      "length": 22,
+      "value": "\"\/notification\/status\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 5358,
+      "length": 49,
+      "value": "\" set notification status as 'Opened' at backend\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 5452,
+      "length": 21,
+      "value": "\"NotificationContent\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 5571,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 5844,
+      "length": 21,
+      "value": "\"NotificationContent\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6244,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 6500,
+      "length": 7,
+      "value": "\"clear\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 6682,
+      "length": 6,
+      "value": "\"link\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 6712,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 6959,
+      "length": 5,
+      "value": "\"zgr\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "Array",
+      "offset": 7015,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "Array",
+      "offset": 7028,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "StringLiteral",
+      "offset": 7555,
+      "length": 5,
+      "value": "\"gif\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationContent.swift",
+      "kind": "FloatLiteral",
+      "offset": 8983,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRSDKVersionProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 145,
+      "length": 7,
+      "value": "\"2.0.3\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/Entities\/ZGRContentEntity+CoreDataProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 278,
+      "length": 9,
+      "value": "\"Content\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/OSLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 806,
+      "length": 12,
+      "value": "\"%{public}@\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/OSLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1379,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/OSLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1427,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/OSLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1912,
+      "length": 3,
+      "value": "\":\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/OSLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1958,
+      "length": 10,
+      "value": "\"[Source]\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/OSLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2022,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/OSLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2044,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/OSLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2248,
+      "length": 13,
+      "value": "\"[User Info]\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/OSLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2306,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/OSLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2652,
+      "length": 6,
+      "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
@@ -21351,9 +26192,184 @@
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
       "kind": "StringLiteral",
+      "offset": 1092,
+      "length": 14,
+      "value": "\"Installation\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
+      "kind": "StringLiteral",
+      "offset": 1348,
+      "length": 14,
+      "value": "\" init called\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
+      "kind": "StringLiteral",
+      "offset": 1375,
+      "length": 12,
+      "value": "\"dictionary\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
+      "kind": "StringLiteral",
+      "offset": 1427,
+      "length": 14,
+      "value": "\"Installation\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
+      "kind": "StringLiteral",
+      "offset": 1481,
+      "length": 9,
+      "value": "\"primary\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1504,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
+      "kind": "StringLiteral",
+      "offset": 1545,
+      "length": 15,
+      "value": "\"pushOsEnabled\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1574,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
+      "kind": "StringLiteral",
+      "offset": 1613,
+      "length": 13,
+      "value": "\"pushEnabled\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1640,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
+      "kind": "StringLiteral",
+      "offset": 1701,
+      "length": 10,
+      "value": "\"settings\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
+      "kind": "StringLiteral",
+      "offset": 2153,
+      "length": 29,
+      "value": "\" json deserialization error\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
+      "kind": "StringLiteral",
+      "offset": 2209,
+      "length": 14,
+      "value": "\"Installation\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
+      "kind": "StringLiteral",
       "offset": 120,
       "length": 15,
       "value": "\"ZGRImSDK.ZGRInstallation\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRCache.swift",
+      "kind": "StringLiteral",
+      "offset": 430,
+      "length": 24,
+      "value": "\"path shouldn't be null\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRCache.swift",
+      "kind": "BooleanLiteral",
+      "offset": 541,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRCache.swift",
+      "kind": "BooleanLiteral",
+      "offset": 814,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRCache.swift",
+      "kind": "StringLiteral",
+      "offset": 932,
+      "length": 72,
+      "value": "\"Error while creating directory at path - \""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRCache.swift",
+      "kind": "StringLiteral",
+      "offset": 1003,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRCache.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1057,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRCache.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1103,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRCache.swift",
+      "kind": "StringLiteral",
+      "offset": 1109,
+      "length": 18,
+      "value": "\"File path passed\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRCache.swift",
+      "kind": "StringLiteral",
+      "offset": 2085,
+      "length": 58,
+      "value": "\"Error while writing file - \""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRCache.swift",
+      "kind": "StringLiteral",
+      "offset": 2142,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRCache.swift",
+      "kind": "StringLiteral",
+      "offset": 2322,
+      "length": 61,
+      "value": "\"Error removing file at path - \""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRCache.swift",
+      "kind": "StringLiteral",
+      "offset": 2382,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRCache.swift",
@@ -21365,65 +26381,429 @@
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
       "kind": "IntegerLiteral",
-      "offset": 188,
+      "offset": 190,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
       "kind": "IntegerLiteral",
-      "offset": 266,
+      "offset": 268,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
       "kind": "IntegerLiteral",
-      "offset": 188,
+      "offset": 190,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
       "kind": "IntegerLiteral",
-      "offset": 266,
+      "offset": 268,
       "length": 5,
       "value": "2"
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
       "kind": "StringLiteral",
-      "offset": 324,
+      "offset": 326,
       "length": 4,
       "value": "\"ID\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
       "kind": "StringLiteral",
-      "offset": 353,
+      "offset": 355,
       "length": 7,
       "value": "\"Title\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
       "kind": "StringLiteral",
-      "offset": 524,
+      "offset": 526,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
       "kind": "StringLiteral",
-      "offset": 556,
+      "offset": 558,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
       "kind": "StringLiteral",
-      "offset": 463,
+      "offset": 594,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
+      "kind": "StringLiteral",
+      "offset": 782,
+      "length": 9,
+      "value": "\"default\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
+      "kind": "StringLiteral",
+      "offset": 822,
+      "length": 9,
+      "value": "\"dismiss\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
+      "kind": "StringLiteral",
+      "offset": 860,
+      "length": 7,
+      "value": "\"other\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
+      "kind": "StringLiteral",
+      "offset": 1354,
+      "length": 13,
+      "value": "\"clickAction\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
+      "kind": "StringLiteral",
+      "offset": 1431,
+      "length": 7,
+      "value": "\"title\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
+      "kind": "StringLiteral",
+      "offset": 1517,
+      "length": 6,
+      "value": "\"link\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
+      "kind": "StringLiteral",
+      "offset": 1552,
+      "length": 9,
+      "value": "\"options\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
+      "kind": "StringLiteral",
+      "offset": 1576,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
+      "kind": "StringLiteral",
+      "offset": 1814,
+      "length": 9,
+      "value": "\"Default\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
+      "kind": "StringLiteral",
+      "offset": 1891,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
+      "kind": "StringLiteral",
+      "offset": 465,
       "length": 9,
       "value": "\"ZGRImSDK.ZGRAction\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 1465,
+      "length": 13,
+      "value": "\"ZGRDatabase\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 1582,
+      "length": 25,
+      "value": "\"Loading of store failed\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 2313,
+      "length": 10,
+      "value": "\"Database\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 3042,
+      "length": 10,
+      "value": "\"Database\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 3243,
+      "length": 14,
+      "value": "\"Notification\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 3321,
+      "length": 6,
+      "value": "\"date\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3340,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3824,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 3943,
+      "length": 10,
+      "value": "\"Database\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 4254,
+      "length": 14,
+      "value": "\"Notification\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 4332,
+      "length": 6,
+      "value": "\"date\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4351,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4541,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 5038,
+      "length": 31,
+      "value": "\"(date >= %@) AND (date <= %@)\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 5203,
+      "length": 14,
+      "value": "\"(date >= %@)\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 5337,
+      "length": 14,
+      "value": "\"(date <= %@)\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 5498,
+      "length": 16,
+      "value": "\"(status == %@)\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6101,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 6220,
+      "length": 10,
+      "value": "\"Database\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 6499,
+      "length": 14,
+      "value": "\"Notification\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 6796,
+      "length": 10,
+      "value": "\"Database\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 7156,
+      "length": 14,
+      "value": "\"Notification\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 7300,
+      "length": 9,
+      "value": "\"Content\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8754,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 8946,
+      "length": 18,
+      "value": "\"identifier == %@\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 9081,
+      "length": 14,
+      "value": "\"Notification\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9174,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 9501,
+      "length": 10,
+      "value": "\"Database\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 9874,
+      "length": 18,
+      "value": "\"identifier == %@\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 10060,
+      "length": 14,
+      "value": "\"Notification\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 10778,
+      "length": 10,
+      "value": "\"Database\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 10941,
+      "length": 18,
+      "value": "\"identifier == %@\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 11063,
+      "length": 14,
+      "value": "\"Notification\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11156,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 11479,
+      "length": 10,
+      "value": "\"Database\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 11759,
+      "length": 14,
+      "value": "\"Installation\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11809,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 12104,
+      "length": 10,
+      "value": "\"Database\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 12411,
+      "length": 14,
+      "value": "\"Installation\""
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13009,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Database\/ZGRDatabase.swift",
+      "kind": "StringLiteral",
+      "offset": 13073,
+      "length": 26,
+      "value": "\"date >= %@ AND date < %@\""
     },
     {
       "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",

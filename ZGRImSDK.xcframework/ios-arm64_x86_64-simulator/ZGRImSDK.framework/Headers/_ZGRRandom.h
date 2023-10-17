@@ -5,6 +5,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface _ZGRRandom : NSObject
 
 - (void)setupWithOptions:(NSMutableDictionary *)options;
+- (NSString *)randomUUIDString;
 
 @end
 
