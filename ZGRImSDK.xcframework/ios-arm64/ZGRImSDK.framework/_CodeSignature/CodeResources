@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/ZGRImSDK-Swift.h</key>
 		<data>
-		t1bzrr56Li1rjH96mamYar8E7L4=
+		8Eyq7i2GaumcSO4bYjY7xXvmLBY=
 		</data>
 		<key>Headers/ZGRImSDK.h</key>
 		<data>
@@ -26,27 +26,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8SmafcDAmjE5F10BXNBRvMyfUjQ=
+		uqWckhJhJIRleD4gqKj+T5g3fkg=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		zmVMO7IXLljl6wDzrdDO3Su5HOE=
+		ef5l5AeqUmvPDst1R6BCC0gyxYQ=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		tjy47S8/hNOv5QnSSN3s7F+OcZM=
+		y1ckQFSfOrbXB7Re69/lcqqYJp4=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		uL+IPNqPO5DEN0AVrwKKfENSqWo=
+		lLZBKEfsOAZKT/pWw6iIe23ru9s=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		tjy47S8/hNOv5QnSSN3s7F+OcZM=
+		y1ckQFSfOrbXB7Re69/lcqqYJp4=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Hw0sVSfUFVM7JxnUjncZ/G1WcIc=
+		UgsMODPXL81E7dio2IkCReiVjDY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,15 +58,15 @@
 		</data>
 		<key>ZGRDatabase.momd/ZGRDatabase v2.mom</key>
 		<data>
-		dqGstmQzQ6JebnmehEjX3CF8jrU=
+		FZyKJO2reUqPQcnqC//+nQW7vSs=
 		</data>
 		<key>ZGRDatabase.momd/ZGRDatabase v3.mom</key>
 		<data>
-		jj+RbsuWhKnXqooJxE4AZjdUxPA=
+		rMxSwP7C6Q5i7fVHepITrO5B+qw=
 		</data>
 		<key>ZGRDatabase.momd/ZGRDatabase v4.mom</key>
 		<data>
-		wl+i1Ebjoj8Xrmf8bscwhCFztLc=
+		C9xnk03BIPIG5hlKEN1lufKLhik=
 		</data>
 		<key>ZGRDatabase.momd/ZGRDatabase v4.omo</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>ZGRDatabase.momd/ZGRDatabase.mom</key>
 		<data>
-		CKX+Gp1n9wcXd56JrBQX0TR/vU4=
+		V/Q4bnJ/Qh9wpjsLBd6JiPwrzqs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -97,7 +97,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wK/GcubXvYszAVJ9otX/FLR5graHJoccOcfeL+p/nsI=
+			mT+Z+j43rZJv1bTGAg+ptAyPbCeo/iGIO/CKc53VEtg=
 			</data>
 		</dict>
 		<key>Headers/ZGRImSDK.h</key>
@@ -118,35 +118,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OKcetZPAdoWU8kbN2nfZSD1MA15Hq5udacUBX5R73mE=
+			TotvbaiCbPGhg1qUTnc+oB/st8tZJnVyxcpn0OIBsdU=
 			</data>
 		</dict>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9/7jYMEWoUx+HlGDzpqsipyGMIxKvGt/vo6mnjVWdLc=
+			ISJ8ZnkXgGDSZHlDd5ZnIRgPEeTdY9M0jhhwsfM122c=
 			</data>
 		</dict>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			thwfPpmrAoR3tUhlGt8exsP0KNE46sohjFNHpGd8O/s=
+			LcrUcDm3A+H695zGAN4Hq1+AbC6gUY/RTlJWmj1gj4E=
 			</data>
 		</dict>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9/7jYMEWoUx+HlGDzpqsipyGMIxKvGt/vo6mnjVWdLc=
+			ISJ8ZnkXgGDSZHlDd5ZnIRgPEeTdY9M0jhhwsfM122c=
 			</data>
 		</dict>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x0IukTjcmk5tzBxihV62CcxG4UY/9+PyeiaZLejpk7M=
+			sHfzjtbkRdOb3nOit+nLBS0tAzHvjnsL9Vhdsezavn8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -167,21 +167,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PusGRuVQSC4pVBTw1C1VfGssUOempRD3w2rH9BSdcqo=
+			+356CCxCaYz0JDP6zYcf7TwtTZ1ej9U52VhWmT0PSWw=
 			</data>
 		</dict>
 		<key>ZGRDatabase.momd/ZGRDatabase v3.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YWUI4eEMY3OXftvaid4lsVWuFtuobOfX2oGR17xcXIk=
+			bDteBYJwUbqkjYGORwOgMRh54Tfl+0qFVeAhNXRfQAU=
 			</data>
 		</dict>
 		<key>ZGRDatabase.momd/ZGRDatabase v4.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9nkopSj/rgMa37hx83Yz1MvQPdUrHdmWj2GwFLXawnk=
+			p6jHuesz2Dzoo9MZb5zuvsy60ibdI/i8QKRA56BacNM=
 			</data>
 		</dict>
 		<key>ZGRDatabase.momd/ZGRDatabase v4.omo</key>
@@ -195,7 +195,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			i2aJwodxunK96Se+0DDbTPz/SNcfInWvkpMhka5fVe0=
+			ELMJobBi+z0b/xWcuy6Tk042xYC7WlBS5E1ACiyvZQg=
 			</data>
 		</dict>
 	</dict>
