@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name ZGRImSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import ActivityKit
 import CoreData
 import Foundation
@@ -209,7 +210,7 @@ public enum ZGRLogLevel : Swift.String, Swift.CaseIterable {
   public init?(rawValue: Swift.String)
   public typealias AllCases = [ZGRImSDK.ZGRLogLevel]
   public typealias RawValue = Swift.String
-  public static var allCases: [ZGRImSDK.ZGRLogLevel] {
+  nonisolated public static var allCases: [ZGRImSDK.ZGRLogLevel] {
     get
   }
   public var rawValue: Swift.String {
@@ -303,10 +304,10 @@ extension Swift.Error {
   @objc final public func deleteNotificationsArray(_ array: [ZGRImSDK.ZGRNotification], withCompletionHandler completionHandler: @escaping (Swift.Bool, ZGRImSDK.ZGRError?) -> ())
   @objc final public func updateNotification(_ notification: ZGRImSDK.ZGRNotification, status stat: Swift.String, withCompletionHandler completionHandler: @escaping (Swift.Bool, ZGRImSDK.ZGRError?) -> ())
 }
+@available(iOSApplicationExtension 16.2, *)
 extension ZGRImSDK.ZGRMessaging {
   final public func saveActivityData(_ data: ZGRImSDK.ZGRActivityData, withCompletionHandler completionHandler: @escaping () -> ())
   final public func setActivityPushStatus(_ notificationId: Swift.String)
-  @available(iOSApplicationExtension 16.1, *)
   final public func setActivityState(_ state: ActivityKit.ActivityState, activityId identifier: Swift.String, withCompletionHandler completionHandler: @escaping () -> ())
 }
 extension ZGRImSDK.ZGRActionEntity {
@@ -564,6 +565,7 @@ public class OSLogger : ZGRImSDK.ZGRLoggerProtocol {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
+@available(iOS 16.2, *)
 public struct ZGRActivityData {
   public init(isEnabled: Swift.Bool, id: Swift.String? = "", token: Swift.String? = "")
 }
@@ -595,7 +597,7 @@ public struct ZGRActivityData {
   @objc deinit
 }
 @objc extension UIKit.UIDevice {
-  @objc @_Concurrency.MainActor(unsafe) public static let zgr_modelName: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency public static let zgr_modelName: Swift.String
 }
 extension Foundation.NSNotification.Name {
   public static let zgrDeviceTokenUpdated: Foundation.Notification.Name
