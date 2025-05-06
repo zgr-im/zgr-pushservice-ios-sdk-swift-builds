@@ -24057,13 +24057,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
-      "kind": "StringLiteral",
-      "offset": 9392,
-      "length": 6,
-      "value": "\"POST\""
-    },
-    {
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/ZGRError.swift",
       "kind": "IntegerLiteral",
       "offset": 173,
