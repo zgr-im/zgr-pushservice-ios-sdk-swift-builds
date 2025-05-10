@@ -465,6 +465,7 @@ extension Swift.String {
 @objc @_inheritsConvenienceInitializers open class ZGRNotificationService : UserNotifications.UNNotificationServiceExtension {
   public var contentHandler: ((UserNotifications.UNNotificationContent) -> Swift.Void)?
   public var bestContent: UserNotifications.UNMutableNotificationContent?
+  public var extConfig: ZGRImSDK.ZGRConfig?
   public func zgr_didReceive(_ request: UserNotifications.UNNotificationRequest, withContentHandler contentHandler: @escaping (UserNotifications.UNNotificationContent) -> Swift.Void)
   public func zgr_serviceExtensionTimeWillExpire()
   public func isZGRNotification(_ userInfo: Foundation.NSDictionary) -> Swift.Bool
