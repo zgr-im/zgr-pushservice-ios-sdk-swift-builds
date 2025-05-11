@@ -24169,7 +24169,7 @@
     {
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
       "kind": "StringLiteral",
-      "offset": 9439,
+      "offset": 9589,
       "length": 6,
       "value": "\"POST\""
     },
@@ -24191,8 +24191,8 @@
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRSDKVersionProvider.swift",
       "kind": "StringLiteral",
       "offset": 145,
-      "length": 7,
-      "value": "\"2.1.5\""
+      "length": 10,
+      "value": "\"2.1.5(1)\""
     },
     {
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
