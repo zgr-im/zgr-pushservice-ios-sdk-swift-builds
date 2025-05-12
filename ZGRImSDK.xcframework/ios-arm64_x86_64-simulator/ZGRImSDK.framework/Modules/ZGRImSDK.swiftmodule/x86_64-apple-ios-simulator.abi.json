@@ -8156,7 +8156,8 @@
             "declAttributes": [
               "Final",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "accessors": [
               {
@@ -23945,21 +23946,28 @@
     {
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
       "kind": "StringLiteral",
-      "offset": 272,
+      "offset": 214,
+      "length": 16,
+      "value": "\"ZGRAppGroupKey\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 270,
       "length": 23,
       "value": "\"ZGRDatabaseEnabledKey\""
     },
     {
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
       "kind": "StringLiteral",
-      "offset": 413,
+      "offset": 411,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
       "kind": "StringLiteral",
-      "offset": 446,
+      "offset": 444,
       "length": 2,
       "value": "\"\""
     },
@@ -24015,21 +24023,21 @@
     {
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 235,
+      "offset": 256,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 269,
+      "offset": 290,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 776,
+      "offset": 797,
       "length": 4,
       "value": "true"
     },
@@ -24169,7 +24177,7 @@
     {
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
       "kind": "StringLiteral",
-      "offset": 9589,
+      "offset": 9591,
       "length": 6,
       "value": "\"POST\""
     },
@@ -24183,7 +24191,7 @@
     {
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/ZGRError.swift",
       "kind": "StringLiteral",
-      "offset": 378,
+      "offset": 399,
       "length": 16,
       "value": "\"ZGRErrorDomain\""
     },
@@ -24192,7 +24200,7 @@
       "kind": "StringLiteral",
       "offset": 145,
       "length": 10,
-      "value": "\"2.1.5(1)\""
+      "value": "\"2.1.5(2)\""
     },
     {
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",

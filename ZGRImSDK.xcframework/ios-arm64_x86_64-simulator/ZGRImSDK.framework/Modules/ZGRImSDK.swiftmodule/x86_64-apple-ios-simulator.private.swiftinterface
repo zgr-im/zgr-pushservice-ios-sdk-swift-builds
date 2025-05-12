@@ -20,7 +20,7 @@ import os
   @objc dynamic public func zgr_dictionaryForKey(_ key: Swift.String) -> [Foundation.NSDictionary]?
   @objc dynamic public func zgr_jsonForKey(_ key: Swift.String) -> Any?
 }
-@_inheritsConvenienceInitializers @objc final public class ZGRPersistentContainer : CoreData.NSPersistentContainer {
+@_inheritsConvenienceInitializers @objc final public class ZGRPersistentContainer : CoreData.NSPersistentContainer, @unchecked Swift.Sendable {
   @objc override final public class func defaultDirectoryURL() -> Foundation.URL
   @objc override dynamic public init(name: Swift.String, managedObjectModel model: CoreData.NSManagedObjectModel)
   @objc deinit
@@ -472,7 +472,7 @@ extension Swift.String {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc final public class ZGRError : Foundation.NSError {
+@_inheritsConvenienceInitializers @objc final public class ZGRError : Foundation.NSError, @unchecked Swift.Sendable {
   @objc public static let ZGRErrorDomain: Foundation.NSErrorDomain
   @objc override dynamic public init(domain: Swift.String, code: Swift.Int, userInfo dict: [Swift.String : Any]? = nil)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
