@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "ZGRImSDK",
+    "printedName": "ZGRImSDK",
     "children": [
       {
         "kind": "Import",
@@ -124,6 +124,20 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -438,6 +452,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -984,6 +1012,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1263,6 +1305,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1578,6 +1634,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1907,6 +1979,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2039,6 +2125,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3197,7 +3299,23 @@
                 "declAttributes": [
                   "RawDocComment"
                 ],
-                "isFromExtension": true
+                "isFromExtension": true,
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  }
+                ]
               }
             ],
             "declKind": "Class",
@@ -3210,6 +3328,20 @@
             ],
             "isFromExtension": true,
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -3547,6 +3679,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -3792,6 +3938,22 @@
         "moduleName": "ZGRImSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -5317,6 +5479,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -6122,6 +6298,22 @@
         "isOpen": true,
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -6627,6 +6819,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -6952,6 +7160,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -7227,6 +7449,9 @@
             "moduleName": "ZGRImSDK",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -7310,6 +7535,20 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -7436,6 +7675,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "Error",
@@ -8020,6 +8273,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -10130,8 +10397,7 @@
             "mangledName": "$s8ZGRImSDK12ZGRMessagingC16setActivityState_10activityId21withCompletionHandlery0E3Kit0eF0O_SSyyctF",
             "moduleName": "ZGRImSDK",
             "declAttributes": [
-              "Final",
-              "Available"
+              "Final"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -10154,6 +10420,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -10848,6 +11128,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -11858,6 +12152,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -12088,6 +12396,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -13139,6 +13461,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -13298,6 +13634,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -13777,6 +14127,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -14251,6 +14615,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -14497,6 +14875,20 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -14843,6 +15235,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -14966,7 +15372,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -15413,6 +15835,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -15600,6 +16036,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "ZGRLoggerProtocol",
@@ -16246,6 +16696,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -16463,6 +16927,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -17148,6 +17626,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -17449,6 +17941,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -18139,6 +18645,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -19463,6 +19983,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -19611,8 +20145,26 @@
         "usr": "s:8ZGRImSDK15ZGRActivityDataV",
         "mangledName": "$s8ZGRImSDK15ZGRActivityDataV",
         "moduleName": "ZGRImSDK",
+        "intro_iOS": "16.2",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -20023,6 +20575,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -20423,6 +20991,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -20633,6 +21215,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -20949,6 +21545,20 @@
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -21556,6 +22166,20 @@
             "printedName": "_DestructorSafeContainer",
             "usr": "s:s24_DestructorSafeContainerP",
             "mangledName": "$ss24_DestructorSafeContainerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -22244,6 +22868,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -22277,6 +22915,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -22319,6 +22958,7 @@
         "intro_iOS": "2.0",
         "objc_name": "UIDevice",
         "declAttributes": [
+          "Preconcurrency",
           "Available",
           "ObjC",
           "NonSendable",
@@ -22332,6 +22972,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -22596,6 +23250,20 @@
         "isFromExtension": true,
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "_ObjectiveCBridgeable",
@@ -22922,6 +23590,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -22983,1918 +23665,2177 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
       "kind": "IntegerLiteral",
       "offset": 125,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
       "kind": "IntegerLiteral",
       "offset": 139,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
       "kind": "IntegerLiteral",
       "offset": 154,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 125,
-      "length": 4,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 139,
-      "length": 5,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
-      "kind": "IntegerLiteral",
-      "offset": 154,
-      "length": 5,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
       "kind": "StringLiteral",
       "offset": 187,
       "length": 6,
       "value": "\"Type\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
       "kind": "StringLiteral",
       "offset": 217,
       "length": 5,
       "value": "\"URL\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
       "kind": "StringLiteral",
-      "offset": 293,
-      "length": 10,
-      "value": "\"ZGRImSDK.ZGRContent\""
+      "offset": 564,
+      "length": 6,
+      "value": "\"html\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/ZGRLoggerEvents.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
       "kind": "StringLiteral",
-      "offset": 1965,
-      "length": 10,
-      "value": "\"ZGRImSDK.ErrorEvent\""
+      "offset": 599,
+      "length": 7,
+      "value": "\"image\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRContent.swift",
       "kind": "StringLiteral",
-      "offset": 119,
-      "length": 26,
-      "value": "\"ZGRCategoryRegisterToken\""
+      "offset": 635,
+      "length": 7,
+      "value": "\"other\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 176,
-      "length": 23,
-      "value": "\"ZGRCategoryGetProfile\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 230,
-      "length": 26,
-      "value": "\"ZGRCategoryUpdateProfile\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 287,
-      "length": 26,
-      "value": "\"ZGRCategorySetOpenStatus\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 344,
-      "length": 28,
-      "value": "\"ZGRCategoryGetInstallation\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 403,
-      "length": 31,
-      "value": "\"ZGRCategoryUpdateInstallation\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 465,
-      "length": 31,
-      "value": "\"ZGRCategoryLogoutInstallation\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 527,
-      "length": 30,
-      "value": "\"ZGRCategorySaveActivityToken\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 589,
-      "length": 31,
-      "value": "\"ZGRCategorySendActivityStatus\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
       "kind": "StringLiteral",
       "offset": 119,
       "length": 26,
       "value": "\"ZGRCategoryRegisterToken\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
       "kind": "StringLiteral",
       "offset": 176,
       "length": 23,
       "value": "\"ZGRCategoryGetProfile\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
       "kind": "StringLiteral",
       "offset": 230,
       "length": 26,
       "value": "\"ZGRCategoryUpdateProfile\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
       "kind": "StringLiteral",
       "offset": 287,
       "length": 26,
       "value": "\"ZGRCategorySetOpenStatus\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
       "kind": "StringLiteral",
       "offset": 344,
       "length": 28,
       "value": "\"ZGRCategoryGetInstallation\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
       "kind": "StringLiteral",
       "offset": 403,
       "length": 31,
       "value": "\"ZGRCategoryUpdateInstallation\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
       "kind": "StringLiteral",
       "offset": 465,
       "length": 31,
       "value": "\"ZGRCategoryLogoutInstallation\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
       "kind": "StringLiteral",
       "offset": 527,
       "length": 30,
       "value": "\"ZGRCategorySaveActivityToken\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
       "kind": "StringLiteral",
       "offset": 589,
       "length": 31,
       "value": "\"ZGRCategorySendActivityStatus\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
       "kind": "StringLiteral",
       "offset": 648,
       "length": 22,
       "value": "\"network-requests.bin\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetwork.swift",
-      "kind": "StringLiteral",
-      "offset": 1112,
-      "length": 10,
-      "value": "\"ZGRImSDK.ZGRNetwork\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/ZGRLogger.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/ZGRLogger\/ZGRLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 577,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
       "kind": "StringLiteral",
       "offset": 227,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRNotification.swift",
-      "kind": "StringLiteral",
-      "offset": 152,
-      "length": 15,
-      "value": "\"ZGRImSDK.ZGRNotification\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
       "kind": "StringLiteral",
       "offset": 296,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
       "kind": "BooleanLiteral",
       "offset": 1151,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/libs\/KeychainSwift.swift",
       "kind": "BooleanLiteral",
       "offset": 5680,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
       "kind": "StringLiteral",
       "offset": 167,
       "length": 14,
       "value": "\"ZGRConfigKey\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
       "kind": "StringLiteral",
       "offset": 272,
       "length": 23,
       "value": "\"ZGRDatabaseEnabledKey\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
       "kind": "StringLiteral",
       "offset": 413,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRConfig.swift",
       "kind": "StringLiteral",
       "offset": 446,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
       "kind": "StringLiteral",
       "offset": 146,
       "length": 17,
       "value": "\"deviceToken.bin\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
       "kind": "StringLiteral",
       "offset": 510,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
       "kind": "BooleanLiteral",
       "offset": 585,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Database\/ZGRDatabaseRequest.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Database\/ZGRDatabaseRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 245,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/ROT13.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/libs\/ROT13.swift",
       "kind": "StringLiteral",
       "offset": 93,
       "length": 28,
       "value": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/ROT13.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/libs\/ROT13.swift",
       "kind": "StringLiteral",
       "offset": 151,
       "length": 28,
       "value": "\"abcdefghijklmnopqrstuvwxyz\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/libs\/ROT13.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/libs\/ROT13.swift",
       "kind": "Dictionary",
       "offset": 228,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
       "kind": "BooleanLiteral",
       "offset": 235,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
       "kind": "BooleanLiteral",
       "offset": 269,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 776,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "IntegerLiteral",
+      "offset": 154,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
       "kind": "StringLiteral",
-      "offset": 165,
-      "length": 26,
-      "value": "\"ZGRImSDK.ZGRNetworkRequestOperation\""
+      "offset": 546,
+      "length": 9,
+      "value": "\"SETTING\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
-      "kind": "IntegerLiteral",
-      "offset": 154,
-      "length": 10,
-      "value": "1"
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 589,
+      "length": 12,
+      "value": "\"PERMISSION\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
-      "kind": "IntegerLiteral",
-      "offset": 154,
-      "length": 10,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
       "kind": "StringLiteral",
       "offset": 651,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
       "kind": "StringLiteral",
       "offset": 683,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
       "kind": "StringLiteral",
       "offset": 714,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
       "kind": "StringLiteral",
       "offset": 751,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
       "kind": "StringLiteral",
-      "offset": 229,
-      "length": 15,
-      "value": "\"ZGRImSDK.ZGRSubscription\""
+      "offset": 890,
+      "length": 4,
+      "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestParams.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
       "kind": "StringLiteral",
-      "offset": 94,
-      "length": 23,
-      "value": "\"ZGRImSDK.ZGRNetworkRequestParams\""
+      "offset": 935,
+      "length": 6,
+      "value": "\"type\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/User\/ZGRUser.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
       "kind": "StringLiteral",
-      "offset": 105,
+      "offset": 979,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 1024,
       "length": 7,
-      "value": "\"ZGRImSDK.ZGRUser\""
+      "value": "\"title\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/String+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 1069,
+      "length": 13,
+      "value": "\"description\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 1157,
+      "length": 6,
+      "value": "\"true\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1166,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1173,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 1218,
+      "length": 7,
+      "value": "\"value\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRSubscription.swift",
+      "kind": "StringLiteral",
+      "offset": 1285,
+      "length": 7,
+      "value": "\"value\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/String+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 129,
       "length": 24,
       "value": "\"ZGR_APP_GROUP_NAME_KEY\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
       "kind": "BooleanLiteral",
       "offset": 316,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
       "kind": "StringLiteral",
       "offset": 9392,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/ZGRError.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/ZGRError.swift",
       "kind": "IntegerLiteral",
       "offset": 173,
       "length": 24,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/ZGRError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 173,
-      "length": 24,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/ZGRError.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/ZGRError.swift",
       "kind": "StringLiteral",
       "offset": 378,
       "length": 16,
       "value": "\"ZGRErrorDomain\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRSDKVersionProvider.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRSDKVersionProvider.swift",
       "kind": "StringLiteral",
       "offset": 145,
-      "length": 7,
-      "value": "\"2.1.3\""
+      "length": 10,
+      "value": "\"2.1.5(4)\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
       "kind": "BooleanLiteral",
       "offset": 187,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
       "kind": "BooleanLiteral",
       "offset": 277,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
       "kind": "BooleanLiteral",
       "offset": 381,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",
-      "kind": "StringLiteral",
-      "offset": 120,
-      "length": 15,
-      "value": "\"ZGRImSDK.ZGRInstallation\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/ZGRCache.swift",
-      "kind": "StringLiteral",
-      "offset": 132,
-      "length": 8,
-      "value": "\"ZGRImSDK.ZGRCache\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
       "kind": "IntegerLiteral",
       "offset": 190,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
       "kind": "IntegerLiteral",
       "offset": 268,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
-      "kind": "IntegerLiteral",
-      "offset": 190,
-      "length": 7,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
-      "kind": "IntegerLiteral",
-      "offset": 268,
-      "length": 5,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
       "kind": "StringLiteral",
       "offset": 326,
       "length": 4,
       "value": "\"ID\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
       "kind": "StringLiteral",
       "offset": 355,
       "length": 7,
       "value": "\"Title\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
       "kind": "StringLiteral",
       "offset": 526,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
       "kind": "StringLiteral",
       "offset": 558,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
       "kind": "StringLiteral",
       "offset": 594,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
       "kind": "StringLiteral",
-      "offset": 465,
+      "offset": 782,
       "length": 9,
-      "value": "\"ZGRImSDK.ZGRAction\""
+      "value": "\"default\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/LiveActivity\/ZGRActivityData.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
       "kind": "StringLiteral",
-      "offset": 218,
+      "offset": 822,
+      "length": 9,
+      "value": "\"dismiss\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/Notification\/ZGRAction.swift",
+      "kind": "StringLiteral",
+      "offset": 860,
+      "length": 7,
+      "value": "\"other\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/LiveActivity\/ZGRActivityData.swift",
+      "kind": "StringLiteral",
+      "offset": 242,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Main\/LiveActivity\/ZGRActivityData.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/LiveActivity\/ZGRActivityData.swift",
       "kind": "StringLiteral",
-      "offset": 240,
+      "offset": 264,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 327,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "IntegerLiteral",
       "offset": 419,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 633,
       "length": 11,
       "value": "\"iPhone3,1\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 646,
       "length": 11,
       "value": "\"iPhone3,2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 659,
       "length": 11,
       "value": "\"iPhone3,3\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 691,
       "length": 10,
       "value": "\"iPhone 4\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 719,
       "length": 11,
       "value": "\"iPhone4,1\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 777,
       "length": 11,
       "value": "\"iPhone 4s\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 806,
       "length": 11,
       "value": "\"iPhone5,1\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 819,
       "length": 11,
       "value": "\"iPhone5,2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 864,
       "length": 10,
       "value": "\"iPhone 5\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 892,
       "length": 11,
       "value": "\"iPhone5,3\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 905,
       "length": 11,
       "value": "\"iPhone5,4\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 950,
       "length": 11,
       "value": "\"iPhone 5c\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 979,
       "length": 11,
       "value": "\"iPhone6,1\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 992,
       "length": 11,
       "value": "\"iPhone6,2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 1037,
       "length": 11,
       "value": "\"iPhone 5s\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 1066,
       "length": 11,
       "value": "\"iPhone7,2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 1124,
       "length": 10,
       "value": "\"iPhone 6\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 1152,
       "length": 11,
       "value": "\"iPhone7,1\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 1210,
       "length": 15,
       "value": "\"iPhone 6 Plus\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 1243,
       "length": 11,
       "value": "\"iPhone8,1\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 1301,
       "length": 11,
       "value": "\"iPhone 6s\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 1330,
       "length": 11,
       "value": "\"iPhone8,2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 1388,
       "length": 16,
       "value": "\"iPhone 6s Plus\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
       "offset": 1422,
-      "length": 11,
-      "value": "\"iPhone8,4\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
-      "kind": "StringLiteral",
-      "offset": 1480,
-      "length": 11,
-      "value": "\"iPhone SE\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
-      "kind": "StringLiteral",
-      "offset": 1509,
       "length": 11,
       "value": "\"iPhone9,1\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1522,
+      "offset": 1435,
       "length": 11,
       "value": "\"iPhone9,3\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1567,
+      "offset": 1480,
       "length": 10,
       "value": "\"iPhone 7\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1595,
+      "offset": 1508,
       "length": 11,
       "value": "\"iPhone9,2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1608,
+      "offset": 1521,
       "length": 11,
       "value": "\"iPhone9,4\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1653,
+      "offset": 1566,
       "length": 15,
       "value": "\"iPhone 7 Plus\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1686,
+      "offset": 1599,
       "length": 12,
       "value": "\"iPhone10,1\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1700,
+      "offset": 1613,
       "length": 12,
       "value": "\"iPhone10,4\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1744,
+      "offset": 1657,
       "length": 10,
       "value": "\"iPhone 8\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1772,
+      "offset": 1685,
       "length": 12,
       "value": "\"iPhone10,2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1786,
+      "offset": 1699,
       "length": 12,
       "value": "\"iPhone10,5\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1830,
+      "offset": 1743,
       "length": 15,
       "value": "\"iPhone 8 Plus\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1863,
+      "offset": 1776,
       "length": 12,
       "value": "\"iPhone10,3\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1877,
+      "offset": 1790,
       "length": 12,
       "value": "\"iPhone10,6\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1921,
+      "offset": 1834,
       "length": 10,
       "value": "\"iPhone X\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 1949,
+      "offset": 1862,
       "length": 12,
       "value": "\"iPhone11,2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2007,
+      "offset": 1920,
       "length": 11,
       "value": "\"iPhone XS\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2036,
+      "offset": 1949,
       "length": 12,
       "value": "\"iPhone11,4\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2050,
+      "offset": 1963,
       "length": 12,
       "value": "\"iPhone11,6\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2094,
+      "offset": 2007,
       "length": 15,
       "value": "\"iPhone XS Max\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2127,
+      "offset": 2040,
       "length": 12,
       "value": "\"iPhone11,8\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2185,
+      "offset": 2098,
       "length": 11,
       "value": "\"iPhone XR\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2214,
+      "offset": 2127,
       "length": 12,
       "value": "\"iPhone12,1\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2272,
+      "offset": 2185,
       "length": 11,
       "value": "\"iPhone 11\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2301,
+      "offset": 2214,
       "length": 12,
       "value": "\"iPhone12,3\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2359,
+      "offset": 2272,
       "length": 15,
       "value": "\"iPhone 11 Pro\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2392,
+      "offset": 2305,
       "length": 12,
       "value": "\"iPhone12,5\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2450,
+      "offset": 2363,
       "length": 19,
       "value": "\"iPhone 11 Pro Max\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2487,
-      "length": 12,
-      "value": "\"iPhone12,8\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
-      "kind": "StringLiteral",
-      "offset": 2545,
-      "length": 28,
-      "value": "\"iPhone SE (2nd generation)\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
-      "kind": "StringLiteral",
-      "offset": 2591,
+      "offset": 2400,
       "length": 12,
       "value": "\"iPhone13,1\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2649,
+      "offset": 2458,
       "length": 16,
       "value": "\"iPhone 12 mini\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2683,
+      "offset": 2492,
       "length": 12,
       "value": "\"iPhone13,2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2741,
+      "offset": 2550,
       "length": 11,
       "value": "\"iPhone 12\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2770,
+      "offset": 2579,
       "length": 12,
       "value": "\"iPhone13,3\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2828,
+      "offset": 2637,
       "length": 15,
       "value": "\"iPhone 12 Pro\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2861,
+      "offset": 2670,
       "length": 12,
       "value": "\"iPhone13,4\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2919,
+      "offset": 2728,
       "length": 19,
       "value": "\"iPhone 12 Pro Max\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 2956,
+      "offset": 2765,
       "length": 12,
       "value": "\"iPhone14,4\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3014,
+      "offset": 2823,
       "length": 16,
       "value": "\"iPhone 13 mini\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3048,
+      "offset": 2857,
       "length": 12,
       "value": "\"iPhone14,5\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3106,
+      "offset": 2915,
       "length": 11,
       "value": "\"iPhone 13\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3135,
+      "offset": 2944,
       "length": 12,
       "value": "\"iPhone14,2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3193,
+      "offset": 3002,
       "length": 15,
       "value": "\"iPhone 13 Pro\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3226,
+      "offset": 3035,
       "length": 12,
       "value": "\"iPhone14,3\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3284,
+      "offset": 3093,
       "length": 19,
       "value": "\"iPhone 13 Pro Max\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3321,
-      "length": 12,
-      "value": "\"iPhone14,6\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
-      "kind": "StringLiteral",
-      "offset": 3379,
-      "length": 28,
-      "value": "\"iPhone SE (3rd generation)\""
-    },
-    {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
-      "kind": "StringLiteral",
-      "offset": 3425,
+      "offset": 3130,
       "length": 12,
       "value": "\"iPhone14,7\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3483,
+      "offset": 3188,
       "length": 11,
       "value": "\"iPhone 14\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3512,
+      "offset": 3217,
       "length": 12,
       "value": "\"iPhone14,8\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3570,
+      "offset": 3275,
       "length": 16,
       "value": "\"iPhone 14 Plus\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3604,
+      "offset": 3309,
       "length": 12,
       "value": "\"iPhone15,2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3662,
+      "offset": 3367,
       "length": 15,
       "value": "\"iPhone 14 Pro\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3695,
+      "offset": 3400,
       "length": 12,
       "value": "\"iPhone15,3\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3753,
+      "offset": 3458,
       "length": 19,
       "value": "\"iPhone 14 Pro Max\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3790,
+      "offset": 3495,
+      "length": 12,
+      "value": "\"iPhone15,4\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3553,
+      "length": 11,
+      "value": "\"iPhone 15\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3582,
+      "length": 12,
+      "value": "\"iPhone15,5\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3640,
+      "length": 16,
+      "value": "\"iPhone 15 Plus\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3674,
+      "length": 12,
+      "value": "\"iPhone16,1\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3732,
+      "length": 15,
+      "value": "\"iPhone 15 Pro\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3765,
+      "length": 12,
+      "value": "\"iPhone16,2\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3823,
+      "length": 19,
+      "value": "\"iPhone 15 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3860,
+      "length": 12,
+      "value": "\"iPhone17,3\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3918,
+      "length": 11,
+      "value": "\"iPhone 16\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 3947,
+      "length": 12,
+      "value": "\"iPhone17,4\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 4005,
+      "length": 16,
+      "value": "\"iPhone 16 Plus\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 4039,
+      "length": 12,
+      "value": "\"iPhone17,1\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 4097,
+      "length": 15,
+      "value": "\"iPhone 16 Pro\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 4130,
+      "length": 12,
+      "value": "\"iPhone17,2\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 4188,
+      "length": 19,
+      "value": "\"iPhone 16 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 4225,
+      "length": 11,
+      "value": "\"iPhone8,4\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 4283,
+      "length": 11,
+      "value": "\"iPhone SE\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 4312,
+      "length": 12,
+      "value": "\"iPhone12,8\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 4370,
+      "length": 28,
+      "value": "\"iPhone SE (2nd generation)\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 4416,
+      "length": 12,
+      "value": "\"iPhone14,6\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 4474,
+      "length": 28,
+      "value": "\"iPhone SE (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 4520,
       "length": 9,
       "value": "\"iPad2,1\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3801,
+      "offset": 4531,
       "length": 9,
       "value": "\"iPad2,2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3812,
+      "offset": 4542,
       "length": 9,
       "value": "\"iPad2,3\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3823,
+      "offset": 4553,
       "length": 9,
       "value": "\"iPad2,4\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3848,
+      "offset": 4578,
       "length": 8,
       "value": "\"iPad 2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3874,
+      "offset": 4604,
       "length": 9,
       "value": "\"iPad3,1\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3885,
+      "offset": 4615,
       "length": 9,
       "value": "\"iPad3,2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3896,
+      "offset": 4626,
       "length": 9,
       "value": "\"iPad3,3\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3932,
+      "offset": 4662,
       "length": 23,
       "value": "\"iPad (3rd generation)\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3973,
+      "offset": 4703,
       "length": 9,
       "value": "\"iPad3,4\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3984,
+      "offset": 4714,
       "length": 9,
       "value": "\"iPad3,5\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 3995,
+      "offset": 4725,
       "length": 9,
       "value": "\"iPad3,6\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4031,
+      "offset": 4761,
       "length": 23,
       "value": "\"iPad (4th generation)\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4072,
+      "offset": 4802,
       "length": 10,
       "value": "\"iPad6,11\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4084,
+      "offset": 4814,
       "length": 10,
       "value": "\"iPad6,12\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4130,
+      "offset": 4860,
       "length": 23,
       "value": "\"iPad (5th generation)\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4171,
+      "offset": 4901,
       "length": 9,
       "value": "\"iPad7,5\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4182,
+      "offset": 4912,
       "length": 9,
       "value": "\"iPad7,6\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4229,
+      "offset": 4959,
       "length": 23,
       "value": "\"iPad (6th generation)\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4270,
+      "offset": 5000,
       "length": 10,
       "value": "\"iPad7,11\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4282,
+      "offset": 5012,
       "length": 10,
       "value": "\"iPad7,12\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4328,
+      "offset": 5058,
       "length": 23,
       "value": "\"iPad (7th generation)\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4369,
+      "offset": 5099,
       "length": 10,
       "value": "\"iPad11,6\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4381,
+      "offset": 5111,
       "length": 10,
       "value": "\"iPad11,7\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4427,
+      "offset": 5157,
       "length": 23,
       "value": "\"iPad (8th generation)\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4468,
+      "offset": 5198,
       "length": 10,
       "value": "\"iPad12,1\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4480,
+      "offset": 5210,
       "length": 10,
       "value": "\"iPad12,2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4526,
+      "offset": 5256,
       "length": 23,
       "value": "\"iPad (9th generation)\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4567,
+      "offset": 5297,
+      "length": 11,
+      "value": "\"iPad13,18\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 5310,
+      "length": 11,
+      "value": "\"iPad13,19\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 5355,
+      "length": 24,
+      "value": "\"iPad (10th generation)\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 5397,
       "length": 9,
       "value": "\"iPad4,1\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4578,
+      "offset": 5408,
       "length": 9,
       "value": "\"iPad4,2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4589,
+      "offset": 5419,
       "length": 9,
       "value": "\"iPad4,3\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4625,
+      "offset": 5455,
       "length": 10,
       "value": "\"iPad Air\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4653,
+      "offset": 5483,
       "length": 9,
       "value": "\"iPad5,3\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4664,
+      "offset": 5494,
       "length": 9,
       "value": "\"iPad5,4\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4711,
+      "offset": 5541,
       "length": 12,
       "value": "\"iPad Air 2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4741,
+      "offset": 5571,
       "length": 10,
       "value": "\"iPad11,3\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4753,
+      "offset": 5583,
       "length": 10,
       "value": "\"iPad11,4\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4799,
+      "offset": 5629,
       "length": 27,
       "value": "\"iPad Air (3rd generation)\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4844,
+      "offset": 5674,
       "length": 10,
       "value": "\"iPad13,1\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4856,
+      "offset": 5686,
       "length": 10,
       "value": "\"iPad13,2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4902,
+      "offset": 5732,
       "length": 27,
       "value": "\"iPad Air (4th generation)\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4947,
+      "offset": 5777,
       "length": 11,
       "value": "\"iPad13,16\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 4960,
+      "offset": 5790,
       "length": 11,
       "value": "\"iPad13,17\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5005,
+      "offset": 5835,
       "length": 27,
       "value": "\"iPad Air (5th generation)\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5050,
+      "offset": 5880,
+      "length": 10,
+      "value": "\"iPad14,8\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 5892,
+      "length": 10,
+      "value": "\"iPad14,9\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 5938,
+      "length": 25,
+      "value": "\"iPad Air (11-inch) (M2)\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 5981,
+      "length": 11,
+      "value": "\"iPad14,10\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 5994,
+      "length": 11,
+      "value": "\"iPad14,11\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 6039,
+      "length": 25,
+      "value": "\"iPad Air (13-inch) (M2)\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 6082,
       "length": 9,
       "value": "\"iPad2,5\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5061,
+      "offset": 6093,
       "length": 9,
       "value": "\"iPad2,6\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5072,
+      "offset": 6104,
       "length": 9,
       "value": "\"iPad2,7\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5108,
+      "offset": 6140,
       "length": 11,
       "value": "\"iPad mini\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5137,
+      "offset": 6169,
       "length": 9,
       "value": "\"iPad4,4\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5148,
+      "offset": 6180,
       "length": 9,
       "value": "\"iPad4,5\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5159,
+      "offset": 6191,
       "length": 9,
       "value": "\"iPad4,6\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5195,
+      "offset": 6227,
       "length": 13,
       "value": "\"iPad mini 2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5226,
+      "offset": 6258,
       "length": 9,
       "value": "\"iPad4,7\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5237,
+      "offset": 6269,
       "length": 9,
       "value": "\"iPad4,8\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5248,
+      "offset": 6280,
       "length": 9,
       "value": "\"iPad4,9\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5284,
+      "offset": 6316,
       "length": 13,
       "value": "\"iPad mini 3\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5315,
+      "offset": 6347,
       "length": 9,
       "value": "\"iPad5,1\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5326,
+      "offset": 6358,
       "length": 9,
       "value": "\"iPad5,2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5373,
+      "offset": 6405,
       "length": 13,
       "value": "\"iPad mini 4\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5404,
+      "offset": 6436,
       "length": 10,
       "value": "\"iPad11,1\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5416,
+      "offset": 6448,
       "length": 10,
       "value": "\"iPad11,2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5462,
+      "offset": 6494,
       "length": 28,
       "value": "\"iPad mini (5th generation)\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5508,
+      "offset": 6540,
       "length": 10,
       "value": "\"iPad14,1\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5520,
+      "offset": 6552,
       "length": 10,
       "value": "\"iPad14,2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5566,
+      "offset": 6598,
       "length": 28,
       "value": "\"iPad mini (6th generation)\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5612,
+      "offset": 6644,
+      "length": 10,
+      "value": "\"iPad16,1\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 6656,
+      "length": 10,
+      "value": "\"iPad16,2\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 6702,
+      "length": 21,
+      "value": "\"iPad mini (A17 Pro)\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 6741,
       "length": 9,
       "value": "\"iPad6,3\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5623,
+      "offset": 6752,
       "length": 9,
       "value": "\"iPad6,4\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5670,
+      "offset": 6799,
       "length": 21,
       "value": "\"iPad Pro (9.7-inch)\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5709,
+      "offset": 6838,
       "length": 9,
       "value": "\"iPad7,3\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5720,
+      "offset": 6849,
       "length": 9,
       "value": "\"iPad7,4\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5767,
+      "offset": 6896,
       "length": 22,
       "value": "\"iPad Pro (10.5-inch)\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5807,
+      "offset": 6936,
       "length": 9,
       "value": "\"iPad8,1\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5818,
+      "offset": 6947,
       "length": 9,
       "value": "\"iPad8,2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5829,
+      "offset": 6958,
       "length": 9,
       "value": "\"iPad8,3\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5840,
+      "offset": 6969,
       "length": 9,
       "value": "\"iPad8,4\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5865,
+      "offset": 6994,
       "length": 37,
       "value": "\"iPad Pro (11-inch) (1st generation)\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5920,
+      "offset": 7049,
       "length": 9,
       "value": "\"iPad8,9\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5931,
+      "offset": 7060,
       "length": 10,
       "value": "\"iPad8,10\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 5978,
+      "offset": 7107,
       "length": 37,
       "value": "\"iPad Pro (11-inch) (2nd generation)\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6033,
+      "offset": 7162,
+      "length": 10,
+      "value": "\"iPad13,4\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 7174,
+      "length": 10,
+      "value": "\"iPad13,5\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 7186,
+      "length": 10,
+      "value": "\"iPad13,6\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 7198,
+      "length": 10,
+      "value": "\"iPad13,7\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 7220,
+      "length": 37,
+      "value": "\"iPad Pro (11-inch) (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 7275,
+      "length": 10,
+      "value": "\"iPad14,3\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 7287,
+      "length": 10,
+      "value": "\"iPad14,4\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 7333,
+      "length": 37,
+      "value": "\"iPad Pro (11-inch) (4th generation)\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 7388,
+      "length": 10,
+      "value": "\"iPad16,3\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 7400,
+      "length": 10,
+      "value": "\"iPad16,4\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 7446,
+      "length": 25,
+      "value": "\"iPad Pro (11-inch) (M4)\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 7489,
       "length": 9,
       "value": "\"iPad6,7\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6044,
+      "offset": 7500,
       "length": 9,
       "value": "\"iPad6,8\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6091,
+      "offset": 7547,
       "length": 39,
       "value": "\"iPad Pro (12.9-inch) (1st generation)\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6148,
+      "offset": 7604,
       "length": 9,
       "value": "\"iPad7,1\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6159,
+      "offset": 7615,
       "length": 9,
       "value": "\"iPad7,2\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6206,
+      "offset": 7662,
       "length": 39,
       "value": "\"iPad Pro (12.9-inch) (2nd generation)\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6263,
+      "offset": 7719,
       "length": 9,
       "value": "\"iPad8,5\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6274,
+      "offset": 7730,
       "length": 9,
       "value": "\"iPad8,6\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6285,
+      "offset": 7741,
       "length": 9,
       "value": "\"iPad8,7\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6296,
+      "offset": 7752,
       "length": 9,
       "value": "\"iPad8,8\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6321,
+      "offset": 7777,
       "length": 39,
       "value": "\"iPad Pro (12.9-inch) (3rd generation)\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6378,
+      "offset": 7834,
       "length": 10,
       "value": "\"iPad8,11\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6390,
+      "offset": 7846,
       "length": 10,
       "value": "\"iPad8,12\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6436,
+      "offset": 7892,
       "length": 39,
       "value": "\"iPad Pro (12.9-inch) (4th generation)\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6493,
+      "offset": 7949,
       "length": 10,
       "value": "\"iPad13,8\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6505,
+      "offset": 7961,
       "length": 10,
       "value": "\"iPad13,9\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6517,
+      "offset": 7973,
       "length": 11,
       "value": "\"iPad13,10\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6530,
+      "offset": 7986,
       "length": 11,
       "value": "\"iPad13,11\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6551,
+      "offset": 8007,
       "length": 39,
       "value": "\"iPad Pro (12.9-inch) (5th generation)\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6608,
+      "offset": 8064,
+      "length": 10,
+      "value": "\"iPad14,5\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 8076,
+      "length": 10,
+      "value": "\"iPad14,6\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 8122,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (6th generation)\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 8179,
+      "length": 10,
+      "value": "\"iPad16,5\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 8191,
+      "length": 10,
+      "value": "\"iPad16,6\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 8237,
+      "length": 25,
+      "value": "\"iPad Pro (13-inch) (M4)\""
+    },
+    {
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "kind": "StringLiteral",
+      "offset": 8280,
       "length": 6,
       "value": "\"i386\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6616,
+      "offset": 8288,
       "length": 8,
       "value": "\"x86_64\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6666,
+      "offset": 8338,
       "length": 104,
       "value": "\"Simulator \""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6729,
+      "offset": 8401,
       "length": 28,
       "value": "\"SIMULATOR_MODEL_IDENTIFIER\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6762,
+      "offset": 8434,
       "length": 5,
       "value": "\"iOS\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/UIDevice+ZGR.swift",
       "kind": "StringLiteral",
-      "offset": 6769,
+      "offset": 8441,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/Notification+Name.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Config\/Notification+Name.swift",
       "kind": "StringLiteral",
       "offset": 163,
       "length": 38,
       "value": "\"ZGRDeviceTokenUpdatedNotificationKey\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/Notification+Name.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Config\/Notification+Name.swift",
       "kind": "StringLiteral",
       "offset": 270,
       "length": 36,
       "value": "\"ZGRDidReceiveRemoteNotificationKey\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/Notification+Name.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Config\/Notification+Name.swift",
       "kind": "StringLiteral",
       "offset": 372,
       "length": 33,
       "value": "\"ZGRDidOpenRemoteNotificationKey\""
     },
     {
-      "filePath": "\/Users\/alex\/sdk-swift\/zgr.im.sdk\/Public\/Config\/Notification+Name.swift",
+      "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Config\/Notification+Name.swift",
       "kind": "StringLiteral",
       "offset": 480,
       "length": 42,
