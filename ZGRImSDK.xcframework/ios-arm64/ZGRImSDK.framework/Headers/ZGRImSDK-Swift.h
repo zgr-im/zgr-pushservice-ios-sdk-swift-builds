@@ -390,6 +390,8 @@ SWIFT_CLASS("_TtC8ZGRImSDK9ZGRConfig")
 @property (nonatomic, copy) NSString * _Nonnull apiKey;
 @property (nonatomic, copy) NSURL * _Nullable endpoint;
 @property (nonatomic) BOOL isLocalDatabaseEnabled;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ZGRConfig * _Nonnull sharedInstance;)
++ (ZGRConfig * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)resetToEmbeddedConfig;
