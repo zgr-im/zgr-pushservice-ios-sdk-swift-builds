@@ -457,6 +457,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ZGRDatabase 
 + (ZGRDatabase * _Nullable)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)setPersistentContainerNil;
 - (NSArray<ZGRNotification *> * _Nullable)allNotifications SWIFT_WARN_UNUSED_RESULT;
 - (NSArray<ZGRNotification *> * _Nullable)notificationsWith:(ZGRDatabaseRequest * _Nonnull)request SWIFT_WARN_UNUSED_RESULT;
 - (void)deleteAllNotifications;
@@ -1234,6 +1235,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ZGRDatabase 
 + (ZGRDatabase * _Nullable)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)setPersistentContainerNil;
 - (NSArray<ZGRNotification *> * _Nullable)allNotifications SWIFT_WARN_UNUSED_RESULT;
 - (NSArray<ZGRNotification *> * _Nullable)notificationsWith:(ZGRDatabaseRequest * _Nonnull)request SWIFT_WARN_UNUSED_RESULT;
 - (void)deleteAllNotifications;

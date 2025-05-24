@@ -585,6 +585,7 @@ public struct ZGRActivityData {
   @objc public static var sharedInstance: ZGRImSDK.ZGRDatabase? {
     @objc get
   }
+  @objc final public func setPersistentContainerNil()
   @objc final public func allNotifications() -> [ZGRImSDK.ZGRNotification]?
   @objc final public func notifications(with request: ZGRImSDK.ZGRDatabaseRequest) -> [ZGRImSDK.ZGRNotification]?
   @objc final public func deleteAllNotifications()

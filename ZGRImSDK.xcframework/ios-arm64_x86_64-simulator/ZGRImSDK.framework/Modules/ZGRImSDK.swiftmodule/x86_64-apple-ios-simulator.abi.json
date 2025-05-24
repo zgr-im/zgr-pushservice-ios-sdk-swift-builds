@@ -20666,6 +20666,29 @@
           },
           {
             "kind": "Function",
+            "name": "setPersistentContainerNil",
+            "printedName": "setPersistentContainerNil()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ZGRImSDK@objc(cs)ZGRDatabase(im)setPersistentContainerNil",
+            "mangledName": "$s8ZGRImSDK11ZGRDatabaseC25setPersistentContainerNilyyF",
+            "moduleName": "ZGRImSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "allNotifications",
             "printedName": "allNotifications()",
             "children": [
@@ -20700,8 +20723,7 @@
             "declAttributes": [
               "Final",
               "ObjC",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -24082,7 +24104,7 @@
       "kind": "StringLiteral",
       "offset": 145,
       "length": 10,
-      "value": "\"2.1.5(4)\""
+      "value": "\"2.1.5(5)\""
     },
     {
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",

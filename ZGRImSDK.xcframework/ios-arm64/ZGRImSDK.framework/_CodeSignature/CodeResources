@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/ZGRImSDK-Swift.h</key>
 		<data>
-		3GiJM4HfS3qK2gqNOpy0FspEIt0=
+		V6mZjHG7g0CyeQwbbnNwB4tucA0=
 		</data>
 		<key>Headers/ZGRImSDK.h</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		hD96obEpLur7WDD/66Nju6y9qYo=
+		PoFPv5MZtMbkc4OtxaXl2d2uxug=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		57pSwINvZJzyE216m/3VCvHEGrM=
+		gVgl7kADvLv1pj6w01GgdLlJftM=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		57pSwINvZJzyE216m/3VCvHEGrM=
+		gVgl7kADvLv1pj6w01GgdLlJftM=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		1HNHrVllokVeo1rsWNAp0AKBlgs=
+		MGKmqIvjk4kL2wEREWuC3MZYj5g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -97,7 +97,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/mKQlNp/jBJDKcczaAV3NX5RFWjIYEVm2aXcC3QJ5qs=
+			L2SLQ0sruHpp65YqiDXvGFkdt7fO7+wB9TFRNQZL3EU=
 			</data>
 		</dict>
 		<key>Headers/ZGRImSDK.h</key>
@@ -118,14 +118,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lDfjvOezuaqsWBcEekf42xvx1ovIJmnUw76Ufd7r4ag=
+			J3TvJbSMBaUGn4qdLUj/6eA8voVys7cKLIhMijehwMY=
 			</data>
 		</dict>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oGbLIDUJ7XJOAA5wPrd1U/IGvytq4wmhu4nivWEeM3k=
+			3p/cKzxA8f/5XW9g/cEONQqJw27Y6grsQAgXggUX5m8=
 			</data>
 		</dict>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -139,14 +139,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oGbLIDUJ7XJOAA5wPrd1U/IGvytq4wmhu4nivWEeM3k=
+			3p/cKzxA8f/5XW9g/cEONQqJw27Y6grsQAgXggUX5m8=
 			</data>
 		</dict>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k3bgZwOaAkbg/4+S+ufUagK2TmhY2ZE7cS+CfEG+zxc=
+			xzpslSpCH04tHxTMhxEeATvGhdZrOyEOWgvy3xlDy2c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
