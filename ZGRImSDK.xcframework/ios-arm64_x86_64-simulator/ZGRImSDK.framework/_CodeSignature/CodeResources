@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/ZGRImSDK-Swift.h</key>
 		<data>
-		JzfjIZjQV+fFOYrA0nYy1WdFl/A=
+		l8i1x4lzWRCI93EOKWWW1NaVf1E=
 		</data>
 		<key>Headers/ZGRImSDK.h</key>
 		<data>
@@ -26,47 +26,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8O4xUuwLocJ6NSDdecY4ZS90qlk=
+		HNcZd+YKV8FPes6upPP1o9o/e6Q=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		+L+Wz1U8fXn7y+h4aiKJAu7WtQ0=
+		Mywsa2rTftchzb/sib63ZYKpRFk=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		SbA95CmCbnPZtYtf7kGZcJU5CdM=
+		sfEvWTSM6MjT68lnyOE+ZNwLKgo=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		hFvay2LkE605VwsVxjQFfHUDtvA=
+		yWd9KG6igts5cYAdbjlwQs+nt+0=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		SbA95CmCbnPZtYtf7kGZcJU5CdM=
+		sfEvWTSM6MjT68lnyOE+ZNwLKgo=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		clarvQFiumQigJa2LCivVbgIZ9Q=
+		FKAMT1NO2RinlZT+eq3Jg6pBV9Y=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		+L+Wz1U8fXn7y+h4aiKJAu7WtQ0=
+		Mywsa2rTftchzb/sib63ZYKpRFk=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		TDOGqDD6Qx9zEHHDEKSHYf0plp4=
+		tVYKvhBv4XIfbiTBybyVlg7rczw=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Qh7t2wL3wLjSNO8zr44xnRjNNvI=
+		Z0bcZen20iFeXXDER6vD4iCLLhY=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		TDOGqDD6Qx9zEHHDEKSHYf0plp4=
+		tVYKvhBv4XIfbiTBybyVlg7rczw=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8fvpaHAdQuElV4//eKFfGWQwyr8=
+		u62BZybSb/f2+dxNzos1dpEU4Wc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -78,15 +78,15 @@
 		</data>
 		<key>ZGRDatabase.momd/ZGRDatabase v2.mom</key>
 		<data>
-		pHME2K8TJJYC7zGCf5QT6oL/+IA=
+		sdYug/HxUssylhWEk21EaTSsBzk=
 		</data>
 		<key>ZGRDatabase.momd/ZGRDatabase v3.mom</key>
 		<data>
-		viRGjAs9DNOte5gfcyEVmB8aqpM=
+		VfA0PZsnGQNzsqtKokbIKq65NSk=
 		</data>
 		<key>ZGRDatabase.momd/ZGRDatabase v4.mom</key>
 		<data>
-		kflKxdc4ql3fICoH3nroe4RT5M8=
+		XhEGurLYLo7UrgEcuWiC1T0nn5I=
 		</data>
 		<key>ZGRDatabase.momd/ZGRDatabase v4.omo</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>ZGRDatabase.momd/ZGRDatabase.mom</key>
 		<data>
-		X1tIbcVoQVosFfl4+pVly3olS9c=
+		sN42078jOsNKKjIW3AlAE2e7p2M=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -117,7 +117,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GVcqKDIUZXxPhNLfLfRGaO7zMX+07okzc7/J61Rd9Xc=
+			VhjX1RDXLHyOp1DmdEQAPMgMeBxZs+q8ixXcsH+LcVY=
 			</data>
 		</dict>
 		<key>Headers/ZGRImSDK.h</key>
@@ -138,70 +138,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			r+a+6K6NZnIBHntp1y3JbL0UkrbvBwqVfTOBAEMcI2A=
+			iQWCHAXPiFvYh0Vm3SajcIDYa6h5a/xoQ0725ttkoS4=
 			</data>
 		</dict>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RlychAr5HBLIUhr2+DTh+gBpTdst94DSpzIZFB7e2MU=
+			hYgKXbrcMKB5b0T54j8HMncB2C7AFAlkvPxgBiG26xE=
 			</data>
 		</dict>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L+ECpjavpb5ZANc+gx/jESowZhEQdpmwZXsNKYGPw4I=
+			OuG5Ik3zw4NN4iKocmmWnA5dNUBw2cCOzZucZvWxNUo=
 			</data>
 		</dict>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RlychAr5HBLIUhr2+DTh+gBpTdst94DSpzIZFB7e2MU=
+			hYgKXbrcMKB5b0T54j8HMncB2C7AFAlkvPxgBiG26xE=
 			</data>
 		</dict>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O1M5ell6Zi8Lw2GzdQA8WvExlcC6/pnF3SWaka11lI4=
+			GRbOpFvZiu3LNE52M7MWBwu65EU8g15XvWo1W5HcyhM=
 			</data>
 		</dict>
 		<key>Modules/ZGRImSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r+a+6K6NZnIBHntp1y3JbL0UkrbvBwqVfTOBAEMcI2A=
+			iQWCHAXPiFvYh0Vm3SajcIDYa6h5a/xoQ0725ttkoS4=
 			</data>
 		</dict>
 		<key>Modules/ZGRImSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J6bb+xnrVkEKAkw1s7BTtG/g0sP7uzbd08Wduubq/wo=
+			OvKYhau378/WeGPAi11DWSYCM7q8cuBDDJvICQKCFw0=
 			</data>
 		</dict>
 		<key>Modules/ZGRImSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CEtiUPTu2QBVML/8ns6alZXNzYjmJwQFhfddaIhYOrM=
+			uKpyn4YGwQYlsXI7MPwmbvjQEYKbi5esXOHUBp3oiHY=
 			</data>
 		</dict>
 		<key>Modules/ZGRImSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J6bb+xnrVkEKAkw1s7BTtG/g0sP7uzbd08Wduubq/wo=
+			OvKYhau378/WeGPAi11DWSYCM7q8cuBDDJvICQKCFw0=
 			</data>
 		</dict>
 		<key>Modules/ZGRImSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UjEu8bCWqX8bno2m3R92ZEmCkG4HhdkVRDJzhp6QOTs=
+			mdqba+tBBDfvRNyXbc3tpPhb3us1CFFzDTRVfxuLTq4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -222,21 +222,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JkmtO40G6p+336AjpAbYz3TtL5xmhLW9dFkepHwvsEE=
+			iTyNgblmNIpt4G8MOKYCdqu5mIsGI9eyZOpoxBKMv7E=
 			</data>
 		</dict>
 		<key>ZGRDatabase.momd/ZGRDatabase v3.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qr2ijdTv+Mm+IYcSy4L2ppaj3tBN19i8QZghysb82l0=
+			cSQbWrPi+h4tIlPWUzKnf4ElNLzwR6fc8Nd87UetjIk=
 			</data>
 		</dict>
 		<key>ZGRDatabase.momd/ZGRDatabase v4.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AGV+kNUpAOlsrixbCnZxVmgG/JHV9mj+3z6LKcwaOS8=
+			t135vFTWTfjWDrPxIFfFdCk8yNT1Kme4ywj+mqf4o+s=
 			</data>
 		</dict>
 		<key>ZGRDatabase.momd/ZGRDatabase v4.omo</key>
@@ -250,7 +250,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NDL0IVeIl1AlukBCgc0yPrXA+n5PC94uNdM7C5qW+tk=
+			2VZrzGOZyES+VDTFMViJruSzY9YIiyrZk4fPR+FPnOw=
 			</data>
 		</dict>
 	</dict>
