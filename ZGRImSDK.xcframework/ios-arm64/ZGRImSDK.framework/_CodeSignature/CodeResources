@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Mywsa2rTftchzb/sib63ZYKpRFk=
+		p8OTpG/Jj88OjOekb6z1wBTUap4=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ggOYo/OAuFCnjNjpvZMj4DXuH3I=
+		yX+01D+zE6JsDrcvo4lyoM9QCM8=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ggOYo/OAuFCnjNjpvZMj4DXuH3I=
+		yX+01D+zE6JsDrcvo4lyoM9QCM8=
 		</data>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Ngk+L1nIQa9IiF858JuC3eSZlag=
+		iUenF2AspVO+1ggyN7zTYGbNHag=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -118,14 +118,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iQWCHAXPiFvYh0Vm3SajcIDYa6h5a/xoQ0725ttkoS4=
+			Z9XdRD/VN2m6myP+LrCM5j+rPdy+pa6mGsZhzhTq+I4=
 			</data>
 		</dict>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+xDYmYPrbeXr6bppuWejy9S7FPtoTvi9V5dhNPCyHZA=
+			xQ9DL4BKFjFLpGiYAdO8wLueFwNIAgMAAPMsJtjnVHQ=
 			</data>
 		</dict>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -139,14 +139,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+xDYmYPrbeXr6bppuWejy9S7FPtoTvi9V5dhNPCyHZA=
+			xQ9DL4BKFjFLpGiYAdO8wLueFwNIAgMAAPMsJtjnVHQ=
 			</data>
 		</dict>
 		<key>Modules/ZGRImSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5HEaJLp2DzsoaVwuZw7UbBL7IaQimgLd3CyaZA4aMAU=
+			V+a21mPj+nz1DvWMIt43fAiVeWG4TK9w0PiVgHx0kmI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
