@@ -251,7 +251,7 @@ extension Swift.Error {
   public static func primaryBundle() -> Foundation.Bundle
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class ZGRMessaging : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class ZGRMessaging : ObjectiveC.NSObject, Swift.Sendable {
   @objc final public var network: (any ZGRImSDK.ZGRNetworkProtocol)?
   @objc final public var database: (any ZGRImSDK.ZGRDatabaseProtocol)?
   @objc final public class var shared: ZGRImSDK.ZGRMessaging {
@@ -471,7 +471,7 @@ extension Swift.String {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc final public class ZGRError : Foundation.NSError {
+@_inheritsConvenienceInitializers @objc final public class ZGRError : Foundation.NSError, @unchecked Swift.Sendable {
   @objc public static let ZGRErrorDomain: Foundation.NSErrorDomain
   @objc override dynamic public init(domain: Swift.String, code: Swift.Int, userInfo dict: [Swift.String : Any]? = nil)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
