@@ -10279,128 +10279,6 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "saveActivityData",
-            "printedName": "saveActivityData(_:withCompletionHandler:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ZGRActivityData",
-                "printedName": "ZGRImSDK.ZGRActivityData",
-                "usr": "s:8ZGRImSDK15ZGRActivityDataV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8ZGRImSDK12ZGRMessagingC16saveActivityData_21withCompletionHandleryAA011ZGRActivityF0V_yyctF",
-            "mangledName": "$s8ZGRImSDK12ZGRMessagingC16saveActivityData_21withCompletionHandleryAA011ZGRActivityF0V_yyctF",
-            "moduleName": "ZGRImSDK",
-            "declAttributes": [
-              "Final",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setActivityPushStatus",
-            "printedName": "setActivityPushStatus(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8ZGRImSDK12ZGRMessagingC21setActivityPushStatusyySSF",
-            "mangledName": "$s8ZGRImSDK12ZGRMessagingC21setActivityPushStatusyySSF",
-            "moduleName": "ZGRImSDK",
-            "declAttributes": [
-              "Final"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setActivityState",
-            "printedName": "setActivityState(_:activityId:withCompletionHandler:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ActivityState",
-                "printedName": "ActivityKit.ActivityState",
-                "usr": "s:11ActivityKit0A5StateO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8ZGRImSDK12ZGRMessagingC16setActivityState_10activityId21withCompletionHandlery0E3Kit0eF0O_SSyyctF",
-            "mangledName": "$s8ZGRImSDK12ZGRMessagingC16setActivityState_10activityId21withCompletionHandlery0E3Kit0eF0O_SSyyctF",
-            "moduleName": "ZGRImSDK",
-            "declAttributes": [
-              "Final"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -10420,6 +10298,13 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
           {
             "kind": "Conformance",
             "name": "Copyable",
@@ -23885,14 +23770,14 @@
     {
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
       "kind": "StringLiteral",
-      "offset": 510,
+      "offset": 520,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Main\/ZGRMessaging.swift",
       "kind": "BooleanLiteral",
-      "offset": 585,
+      "offset": 595,
       "length": 5,
       "value": "false"
     },
@@ -23927,21 +23812,21 @@
     {
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 235,
+      "offset": 256,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 269,
+      "offset": 290,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Project\/Network\/ZGRNetworkRequestOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 776,
+      "offset": 797,
       "length": 4,
       "value": "true"
     },
@@ -24081,7 +23966,7 @@
     {
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk.extensions\/ZGRNotificationService.swift",
       "kind": "StringLiteral",
-      "offset": 9403,
+      "offset": 9405,
       "length": 6,
       "value": "\"POST\""
     },
@@ -24095,7 +23980,7 @@
     {
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/ZGRError.swift",
       "kind": "StringLiteral",
-      "offset": 378,
+      "offset": 399,
       "length": 16,
       "value": "\"ZGRErrorDomain\""
     },
@@ -24103,8 +23988,8 @@
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Config\/ZGRSDKVersionProvider.swift",
       "kind": "StringLiteral",
       "offset": 145,
-      "length": 7,
-      "value": "\"2.1.5\""
+      "length": 8,
+      "value": "\"2.1.58\""
     },
     {
       "filePath": "\/Users\/ashubin\/sdk-swift\/zgr.im.sdk\/Public\/Installation\/ZGRInstallation.swift",

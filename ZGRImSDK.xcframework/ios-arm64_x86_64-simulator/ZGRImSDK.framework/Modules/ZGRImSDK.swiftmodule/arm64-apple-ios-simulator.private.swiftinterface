@@ -251,7 +251,7 @@ extension Swift.Error {
   public static func primaryBundle() -> Foundation.Bundle
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class ZGRMessaging : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class ZGRMessaging : ObjectiveC.NSObject, Swift.Sendable {
   @objc final public var network: (any ZGRImSDK.ZGRNetworkProtocol)?
   @objc final public var database: (any ZGRImSDK.ZGRDatabaseProtocol)?
   @objc final public class var shared: ZGRImSDK.ZGRMessaging {
@@ -303,12 +303,6 @@ extension Swift.Error {
   @objc final public func delete(_ notification: ZGRImSDK.ZGRNotification, withCompletionHandler completionHandler: @escaping (Swift.Bool, ZGRImSDK.ZGRError?) -> ())
   @objc final public func deleteNotificationsArray(_ array: [ZGRImSDK.ZGRNotification], withCompletionHandler completionHandler: @escaping (Swift.Bool, ZGRImSDK.ZGRError?) -> ())
   @objc final public func updateNotification(_ notification: ZGRImSDK.ZGRNotification, status stat: Swift.String, withCompletionHandler completionHandler: @escaping (Swift.Bool, ZGRImSDK.ZGRError?) -> ())
-}
-@available(iOSApplicationExtension 16.2, *)
-extension ZGRImSDK.ZGRMessaging {
-  final public func saveActivityData(_ data: ZGRImSDK.ZGRActivityData, withCompletionHandler completionHandler: @escaping () -> ())
-  final public func setActivityPushStatus(_ notificationId: Swift.String)
-  final public func setActivityState(_ state: ActivityKit.ActivityState, activityId identifier: Swift.String, withCompletionHandler completionHandler: @escaping () -> ())
 }
 extension ZGRImSDK.ZGRActionEntity {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<ZGRImSDK.ZGRActionEntity>
@@ -471,7 +465,7 @@ extension Swift.String {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc final public class ZGRError : Foundation.NSError {
+@_inheritsConvenienceInitializers @objc final public class ZGRError : Foundation.NSError, @unchecked Swift.Sendable {
   @objc public static let ZGRErrorDomain: Foundation.NSErrorDomain
   @objc override dynamic public init(domain: Swift.String, code: Swift.Int, userInfo dict: [Swift.String : Any]? = nil)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
