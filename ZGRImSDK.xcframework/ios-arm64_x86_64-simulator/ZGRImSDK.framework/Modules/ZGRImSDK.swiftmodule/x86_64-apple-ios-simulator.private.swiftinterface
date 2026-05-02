@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ZGRImSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import ActivityKit
 import CoreData
 import Foundation
@@ -16,9 +16,15 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os
 @objc extension Foundation.NSDictionary {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func zgr_stringValueForKey(_ key: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func zgr_dictionaryForKey(_ key: Swift.String) -> [Foundation.NSDictionary]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func zgr_jsonForKey(_ key: Swift.String) -> Any?
+  #endif
 }
 @_inheritsConvenienceInitializers @objc final public class ZGRPersistentContainer : CoreData.NSPersistentContainer, @unchecked Swift.Sendable {
   @objc override final public class func defaultDirectoryURL() -> Foundation.URL
@@ -30,7 +36,9 @@ import os
   case html
   case image
   case other
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -39,12 +47,20 @@ import os
 @objc final public class ZGRContent : ObjectiveC.NSObject {
   final public var type: ZGRImSDK.ZGRContentType?
   @objc final public var url: Foundation.URL?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var rawType: Swift.String? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init?(url: Foundation.URL, type: ZGRImSDK.ZGRContentType)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc convenience public init?(userInfo: Foundation.NSDictionary)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init?(ulrString: Swift.String, typeString: Swift.String)
+  #endif
   public static func contentType(string: Swift.String) -> ZGRImSDK.ZGRContentType
   @objc deinit
 }
@@ -58,8 +74,12 @@ extension ZGRImSDK.ZGRLogger {
     final public let level: ZGRImSDK.ZGRLogLevel
     final public let category: Swift.String?
     final public let source: ZGRImSDK.ZGRLogger.GenericEvent.Source?
+    #if compiler(>=5.3) && $NonescapableTypes
     public init(id: Foundation.UUID = .init(), timestamp: Foundation.Date = .init(), _ message: Swift.String, userInfo: ZGRImSDK.ZGRUserInfo? = nil, level: ZGRImSDK.ZGRLogLevel = .debug, category: Swift.String? = nil, source: ZGRImSDK.ZGRLogger.GenericEvent.Source? = nil)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     convenience public init(id: Foundation.UUID = .init(), timestamp: Foundation.Date = .init(), _ message: Swift.String, userInfo: ZGRImSDK.ZGRUserInfo? = nil, level: ZGRImSDK.ZGRLogLevel = .debug, category: Swift.String? = nil, fileID: Swift.StaticString = #fileID, function: Swift.StaticString = #function, line: Swift.UInt = #line)
+    #endif
     public static func == (lhs: ZGRImSDK.ZGRLogger.GenericEvent, rhs: ZGRImSDK.ZGRLogger.GenericEvent) -> Swift.Bool
     @objc deinit
   }
@@ -67,8 +87,12 @@ extension ZGRImSDK.ZGRLogger {
 extension ZGRImSDK.ZGRLogger {
   public class ErrorEvent : ZGRImSDK.ZGRLogger.GenericEvent {
     final public let error: any Swift.Error
+    #if compiler(>=5.3) && $NonescapableTypes
     public init(id: Foundation.UUID = .init(), timestamp: Foundation.Date = .init(), error: any Swift.Error, category: Swift.String? = nil, source: ZGRImSDK.ZGRLogger.GenericEvent.Source? = nil)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     convenience public init(id: Foundation.UUID = .init(), timestamp: Foundation.Date = .init(), error: any Swift.Error, category: Swift.String? = nil, fileID: Swift.StaticString = #fileID, function: Swift.StaticString = #function, line: Swift.UInt = #line)
+    #endif
     @objc deinit
   }
 }
@@ -82,20 +106,28 @@ extension ZGRImSDK.ZGRLogger.GenericEvent {
     public init(fileID: Swift.StaticString = #fileID, function: Swift.StaticString = #function, line: Swift.UInt = #line)
   }
 }
-@_inheritsConvenienceInitializers @objc(ZGRInstallationEntity) public class ZGRInstallationEntity : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@_inheritsConvenienceInitializers @objc(ZGRInstallationEntity) nonisolated public class ZGRInstallationEntity : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
 @objc public protocol ZGRNetworkProtocol : ObjectiveC.NSObjectProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc var cache: ZGRImSDK.ZGRCache? { get set }
+  #endif
   @objc func enqueueRequest(_ request: ZGRImSDK.ZGRNetworkRequest)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func enqueueRequest(_ request: ZGRImSDK.ZGRNetworkRequest, completionHandler completion: ((Foundation.Data?, (any Swift.Error)?) -> Swift.Void)?)
+  #endif
 }
 @objc final public class ZGRNetwork : ObjectiveC.NSObject, ZGRImSDK.ZGRNetworkProtocol {
   @objc final public var cache: ZGRImSDK.ZGRCache?
   @objc public init(cache: ZGRImSDK.ZGRCache)
   @objc final public func enqueueRequest(_ request: ZGRImSDK.ZGRNetworkRequest)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func enqueueRequest(_ request: ZGRImSDK.ZGRNetworkRequest, completionHandler completion: ((Foundation.Data?, (any Swift.Error)?) -> Swift.Void)?)
+  #endif
   @objc deinit
 }
 public protocol ZGRLoggerProtocol {
@@ -109,8 +141,12 @@ public class ZGRLogger {
   @objc deinit
 }
 extension ZGRImSDK.ZGRLogger {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func log(_ message: Swift.StaticString, userInfo: ZGRImSDK.ZGRUserInfo? = nil, level: ZGRImSDK.ZGRLogLevel = .debug, category: Swift.String? = nil, fileID: Swift.StaticString = #fileID, function: Swift.StaticString = #function, line: Swift.UInt = #line)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func log(_ error: any Swift.Error, category: Swift.String? = nil, fileID: Swift.StaticString = #fileID, function: Swift.StaticString = #function, line: Swift.UInt = #line)
+  #endif
 }
 extension ZGRImSDK.ZGRLogger {
   public static var defaultLoggers: [any ZGRImSDK.ZGRLoggerProtocol] {
@@ -129,8 +165,12 @@ extension ZGRImSDK.ZGRLogger {
   @objc final public var actions: [ZGRImSDK.ZGRAction]?
   @objc final public var extraOptions: [Swift.String]?
   @objc final public var customPayload: Any?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init?(content: UserNotifications.UNNotificationContent)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init?(remoteNotification: Foundation.NSDictionary)
+  #endif
   @objc public init(notificationEntity: ZGRImSDK.ZGRNotificationEntity)
   @objc deinit
 }
@@ -140,15 +180,27 @@ open class KeychainSwift {
   open var synchronizable: Swift.Bool
   public init()
   public init(keyPrefix: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   open func set(_ value: Swift.String, forKey key: Swift.String, withAccess access: ZGRImSDK.KeychainSwiftAccessOptions? = nil) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   open func set(_ value: Foundation.Data, forKey key: Swift.String, withAccess access: ZGRImSDK.KeychainSwiftAccessOptions? = nil) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   open func set(_ value: Swift.Bool, forKey key: Swift.String, withAccess access: ZGRImSDK.KeychainSwiftAccessOptions? = nil) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   open func get(_ key: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   open func getData(_ key: Swift.String, asReference: Swift.Bool = false) -> Foundation.Data?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   open func getBool(_ key: Swift.String) -> Swift.Bool?
+  #endif
   @discardableResult
   open func delete(_ key: Swift.String) -> Swift.Bool
   public var allKeys: [Swift.String] {
@@ -207,7 +259,9 @@ public enum KeychainSwiftAccessOptions {
 }
 public enum ZGRLogLevel : Swift.String, Swift.CaseIterable {
   case debug, info, warning, error
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias AllCases = [ZGRImSDK.ZGRLogLevel]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [ZGRImSDK.ZGRLogLevel] {
@@ -251,7 +305,7 @@ extension Swift.Error {
   public static func primaryBundle() -> Foundation.Bundle
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class ZGRMessaging : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class ZGRMessaging : ObjectiveC.NSObject, Swift.Sendable {
   @objc final public var network: (any ZGRImSDK.ZGRNetworkProtocol)?
   @objc final public var database: (any ZGRImSDK.ZGRDatabaseProtocol)?
   @objc final public class var shared: ZGRImSDK.ZGRMessaging {
@@ -272,8 +326,12 @@ extension Swift.Error {
 @objc extension ZGRImSDK.ZGRMessaging {
   @objc final public func register(forRemoteNotifications: Foundation.Data)
   @objc final public func application(_ application: UIKit.UIApplication, didReceiveRemoteNotification userInfo: Foundation.NSDictionary, withCompletionHandler completionHandler: (ZGRImSDK.ZGRNotification) -> ()) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: ((ZGRImSDK.ZGRNotification, ZGRImSDK.ZGRAction) -> ())?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func notificationCenter(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: ((ZGRImSDK.ZGRNotification, ZGRImSDK.ZGRAction) -> ())?) -> Swift.Bool
+  #endif
   @objc final public func showLinkPage(with url: Foundation.URL, andViewController vc: UIKit.UIViewController)
   @objc final public func application(_ application: UIKit.UIApplication, setApplicationBadgeNumber num: Swift.Int)
   @objc final public func updateNotificationStatus(_ status: Swift.String, forNotification identifier: Swift.String)
@@ -281,16 +339,26 @@ extension Swift.Error {
   @objc final public func checkIsPushGranted()
 }
 @objc extension ZGRImSDK.ZGRMessaging {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func fetchUser(completionHandler: @escaping (ZGRImSDK.ZGRUser?, ZGRImSDK.ZGRError?) -> ())
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func saveUser(phoneNumber: Swift.String, withCompletionHandler completionHandler: @escaping (ZGRImSDK.ZGRUser?, ZGRImSDK.ZGRError?) -> ()) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func saveUser(phoneNumber: Swift.String, externalUserId: Swift.String, withCompletionHandler completionHandler: @escaping (ZGRImSDK.ZGRUser?, ZGRImSDK.ZGRError?) -> ()) -> Swift.Bool
+  #endif
 }
 @objc extension ZGRImSDK.ZGRMessaging {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func personalize(_ externalUserId: Swift.String, withCompletionHandler completionHandler: @escaping (ZGRImSDK.ZGRUser?, ZGRImSDK.ZGRError?) -> ())
+  #endif
   @objc final public func depersonalize(withCompletionHandler completionHandler: @escaping () -> ())
 }
 @objc extension ZGRImSDK.ZGRMessaging {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func fetchInstallation(completionHandler: @escaping (ZGRImSDK.ZGRInstallation?, ZGRImSDK.ZGRError?) -> ())
+  #endif
   @objc final public func save(_ installation: ZGRImSDK.ZGRInstallation, withCompletionHandler completionHandler: @escaping () -> ())
 }
 @objc extension ZGRImSDK.ZGRMessaging {
@@ -298,40 +366,54 @@ extension Swift.Error {
     @objc get
     @objc set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func fetchAllNotifications(_ completionHandler: @escaping ([ZGRImSDK.ZGRNotification]?, ZGRImSDK.ZGRError?) -> ())
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func fetchNotifications(with request: ZGRImSDK.ZGRDatabaseRequest, completionHandler: @escaping ([ZGRImSDK.ZGRNotification]?, ZGRImSDK.ZGRError?) -> ())
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func delete(_ notification: ZGRImSDK.ZGRNotification, withCompletionHandler completionHandler: @escaping (Swift.Bool, ZGRImSDK.ZGRError?) -> ())
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func deleteNotificationsArray(_ array: [ZGRImSDK.ZGRNotification], withCompletionHandler completionHandler: @escaping (Swift.Bool, ZGRImSDK.ZGRError?) -> ())
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func updateNotification(_ notification: ZGRImSDK.ZGRNotification, status stat: Swift.String, withCompletionHandler completionHandler: @escaping (Swift.Bool, ZGRImSDK.ZGRError?) -> ())
-}
-@available(iOSApplicationExtension 16.2, *)
-extension ZGRImSDK.ZGRMessaging {
-  final public func saveActivityData(_ data: ZGRImSDK.ZGRActivityData, withCompletionHandler completionHandler: @escaping () -> ())
-  final public func setActivityPushStatus(_ notificationId: Swift.String)
-  final public func setActivityState(_ state: ActivityKit.ActivityState, activityId identifier: Swift.String, withCompletionHandler completionHandler: @escaping () -> ())
+  #endif
 }
 extension ZGRImSDK.ZGRActionEntity {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<ZGRImSDK.ZGRActionEntity>
-  @objc @NSManaged dynamic public var identifier: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var identifier: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var title: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var title: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var type: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var type: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var urlString: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var urlString: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var notification: ZGRImSDK.ZGRNotificationEntity? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var notification: ZGRImSDK.ZGRNotificationEntity? {
     @objc get
     @objc set
   }
+  #endif
 }
 @_inheritsConvenienceInitializers @objc final public class ZGRDatabaseRequest : ObjectiveC.NSObject {
   @objc final public var fetchLimit: Swift.UInt
@@ -344,10 +426,12 @@ extension ZGRImSDK.ZGRActionEntity {
 }
 extension ZGRImSDK.ZGRInstallationEntity {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<ZGRImSDK.ZGRInstallationEntity>
-  @objc @NSManaged dynamic public var identifier: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var identifier: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
 }
 @_inheritsConvenienceInitializers @objc final public class ZGRNetworkRequest : ObjectiveC.NSObject, Foundation.NSCoding {
   @objc final public var category: Swift.String?
@@ -358,18 +442,24 @@ extension ZGRImSDK.ZGRInstallationEntity {
   @objc override dynamic public init()
   @objc public init(coder decoder: Foundation.NSCoder)
   @objc final public func encode(with coder: Foundation.NSCoder)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func setValue(_ value: Swift.String?, forHTTPHeader header: Swift.String)
+  #endif
   @objc final public func setHTTPHeaders(_ req: [Swift.String : Any])
   @objc final public func requestDebugDescription() -> Swift.String
   @objc deinit
 }
 extension ZGRImSDK.ZGRNetworkRequest {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func prepareRequest(_ requestParams: ZGRImSDK.ZGRNetworkRequestParams) -> ZGRImSDK.ZGRNetworkRequest?
+  #endif
 }
 @objc public enum ZGRSubscriptionType : Swift.Int {
   case settings
   case permission
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -378,9 +468,11 @@ extension ZGRImSDK.ZGRNetworkRequest {
 @objc final public class ZGRSubscription : ObjectiveC.NSObject {
   @objc final public var identifier: Foundation.NSNumber?
   final public var type: ZGRImSDK.ZGRSubscriptionType?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var rawType: Swift.String? {
     @objc get
   }
+  #endif
   @objc final public var name: Swift.String
   @objc final public var title: Swift.String
   @objc final public var desc: Swift.String
@@ -388,78 +480,116 @@ extension ZGRImSDK.ZGRNetworkRequest {
   @objc final public var dictionary: Foundation.NSDictionary {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc convenience public init?(JSON: Swift.String, error: ZGRImSDK.ZGRError?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc convenience public init?(JSONData: Foundation.Data, error: ZGRImSDK.ZGRError?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init?(dictionary: Foundation.NSDictionary, error: ZGRImSDK.ZGRError?)
+  #endif
   @objc final public func setValueWithBool(_ value: Swift.Bool) -> Swift.Bool
   @objc final public func setValueWithString(_ value: Swift.String) -> Swift.Bool
   @objc deinit
 }
 @objc public class ZGRNetworkRequestParams : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(js: Foundation.Data?, path: Swift.String, cat: Swift.String, mtd: Swift.String)
+  #endif
   @objc deinit
 }
 extension ZGRImSDK.ZGRNotificationEntity {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<ZGRImSDK.ZGRNotificationEntity>
-  @objc @NSManaged dynamic public var customPayload: Foundation.Data? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var customPayload: Foundation.Data? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var date: Foundation.Date? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var date: Foundation.Date? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var identifier: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var identifier: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var status: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var status: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var subtitle: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var subtitle: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var text: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var text: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var title: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var title: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var urlString: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var urlString: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var actions: Foundation.NSSet? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var actions: Foundation.NSSet? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var content: ZGRImSDK.ZGRContentEntity? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var content: ZGRImSDK.ZGRContentEntity? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension ZGRImSDK.ZGRNotificationEntity {
-  @objc(addActionsObject:) @NSManaged dynamic public func addToActions(_ value: ZGRImSDK.ZGRActionEntity)
-  @objc(removeActionsObject:) @NSManaged dynamic public func removeFromActions(_ value: ZGRImSDK.ZGRActionEntity)
-  @objc(addActions:) @NSManaged dynamic public func addToActions(_ values: Foundation.NSSet)
-  @objc(removeActions:) @NSManaged dynamic public func removeFromActions(_ values: Foundation.NSSet)
+  @objc(addActionsObject:) @NSManaged nonisolated dynamic public func addToActions(_ value: ZGRImSDK.ZGRActionEntity)
+  @objc(removeActionsObject:) @NSManaged nonisolated dynamic public func removeFromActions(_ value: ZGRImSDK.ZGRActionEntity)
+  @objc(addActions:) @NSManaged nonisolated dynamic public func addToActions(_ values: Foundation.NSSet)
+  @objc(removeActions:) @NSManaged nonisolated dynamic public func removeFromActions(_ values: Foundation.NSSet)
 }
 @_hasMissingDesignatedInitializers @objc final public class ZGRUser : ObjectiveC.NSObject {
   @objc final public var externalUserId: Swift.String?
   @objc final public var phoneNumber: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc convenience public init?(JSON: Swift.String, error: ZGRImSDK.ZGRError?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc convenience public init?(JSONData: Foundation.Data, error: ZGRImSDK.ZGRError?)
+  #endif
   @objc deinit
 }
 extension Swift.String {
   public static let ZGRAppGroupNameKey: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public func urlEncode() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func urlDecode() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func zgr_applicationGroupIdentifier() -> Swift.String?
+  #endif
   public static func hexStringFromData(_ data: Foundation.Data) -> Swift.String
 }
 @objc @_inheritsConvenienceInitializers open class ZGRNotificationService : UserNotifications.UNNotificationServiceExtension {
@@ -471,10 +601,14 @@ extension Swift.String {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc final public class ZGRError : Foundation.NSError {
+@_inheritsConvenienceInitializers @objc final public class ZGRError : Foundation.NSError, @unchecked Swift.Sendable {
   @objc public static let ZGRErrorDomain: Foundation.NSErrorDomain
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override dynamic public init(domain: Swift.String, code: Swift.Int, userInfo dict: [Swift.String : Any]? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc final public class ZGRNotificationContent : ObjectiveC.NSObject {
@@ -484,7 +618,9 @@ extension Swift.String {
   @objc final public class func sharedInstance() -> ZGRImSDK.ZGRNotificationContent
   @objc final public func didLoad(_ view: UIKit.UIView)
   @objc final public func contentPresentationEnded()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func didReceive(_ unNotification: UserNotifications.UNNotification, completionHandler: @escaping ([UserNotifications.UNNotificationAction]?) -> ())
+  #endif
   @objc final public func isZGRNotification(_ userInfo: Foundation.NSDictionary) -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
@@ -495,21 +631,29 @@ extension Swift.String {
 }
 extension ZGRImSDK.ZGRContentEntity {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<ZGRImSDK.ZGRContentEntity>
-  @objc @NSManaged dynamic public var type: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var type: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var url: Foundation.URL? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var url: Foundation.URL? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var notification: ZGRImSDK.ZGRNotificationEntity? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var notification: ZGRImSDK.ZGRNotificationEntity? {
     @objc get
     @objc set
   }
+  #endif
 }
-@_inheritsConvenienceInitializers @objc(ZGRContentEntity) public class ZGRContentEntity : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@_inheritsConvenienceInitializers @objc(ZGRContentEntity) nonisolated public class ZGRContentEntity : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
 public class OSLogger : ZGRImSDK.ZGRLoggerProtocol {
@@ -523,26 +667,40 @@ public class OSLogger : ZGRImSDK.ZGRLoggerProtocol {
   @objc final public var isPushOsEnabled: Swift.Bool
   @objc final public var isPushEnabled: Swift.Bool
   @objc final public var subscriptions: [ZGRImSDK.ZGRSubscription]
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc convenience public init?(JSON: Swift.String, error: ZGRImSDK.ZGRError?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc convenience public init?(JSONData: Foundation.Data, error: ZGRImSDK.ZGRError?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init?(dictionary: Foundation.NSDictionary, error: Foundation.NSError?)
+  #endif
   @objc deinit
 }
 @objc final public class ZGRCache : ObjectiveC.NSObject {
   @objc public init(path: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func dataFromFile(_ filename: Swift.String) -> Foundation.Data?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func writeToFile(_ filename: Swift.String, data: Foundation.Data?)
+  #endif
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(ZGRActionEntity) public class ZGRActionEntity : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@_inheritsConvenienceInitializers @objc(ZGRActionEntity) nonisolated public class ZGRActionEntity : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
 @objc public enum ZGRActionType : Swift.Int {
   case `default`
   case dismiss
   case other
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -553,47 +711,69 @@ public class OSLogger : ZGRImSDK.ZGRLoggerProtocol {
   @objc final public var title: Swift.String
   @objc final public var urlString: Swift.String
   final public var type: ZGRImSDK.ZGRActionType?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var rawType: Swift.String? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init?(identifier: Swift.String, title: Swift.String, urlString: Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc convenience public init?(dictionary: Foundation.NSDictionary)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc convenience public init?(response: UserNotifications.UNNotificationResponse)
+  #endif
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(ZGRNotificationEntity) public class ZGRNotificationEntity : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+@_inheritsConvenienceInitializers @objc(ZGRNotificationEntity) nonisolated public class ZGRNotificationEntity : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
-}
-@available(iOS 16.2, *)
-public struct ZGRActivityData {
-  public init(isEnabled: Swift.Bool, id: Swift.String? = "", token: Swift.String? = "")
 }
 @objc public protocol ZGRDatabaseProtocol : ObjectiveC.NSObjectProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc static var sharedInstance: ZGRImSDK.ZGRDatabase? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func allNotifications() -> [ZGRImSDK.ZGRNotification]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func notifications(with request: ZGRImSDK.ZGRDatabaseRequest) -> [ZGRImSDK.ZGRNotification]?
+  #endif
   @objc func deleteAllNotifications()
   @objc func addNotification(_ notification: ZGRImSDK.ZGRNotification)
   @objc func deleteNotification(_ notification: ZGRImSDK.ZGRNotification)
   @objc func updateNotification(_ identifier: Swift.String, status: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func getInstallationId() -> Swift.String?
+  #endif
   @objc func saveInstallationId(_ installationId: Swift.String)
   @objc func deleteNotificationsArray(_ array: [ZGRImSDK.ZGRNotification])
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class ZGRDatabase : ObjectiveC.NSObject, ZGRImSDK.ZGRDatabaseProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var sharedInstance: ZGRImSDK.ZGRDatabase? {
     @objc get
   }
+  #endif
   @objc final public func setPersistentContainerNil()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func allNotifications() -> [ZGRImSDK.ZGRNotification]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func notifications(with request: ZGRImSDK.ZGRDatabaseRequest) -> [ZGRImSDK.ZGRNotification]?
+  #endif
   @objc final public func deleteAllNotifications()
   @objc final public func addNotification(_ notification: ZGRImSDK.ZGRNotification)
   @objc final public func deleteNotification(_ notification: ZGRImSDK.ZGRNotification)
   @objc final public func deleteNotificationsArray(_ array: [ZGRImSDK.ZGRNotification])
   @objc final public func updateNotification(_ identifier: Swift.String, status: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func getInstallationId() -> Swift.String?
+  #endif
   @objc final public func saveInstallationId(_ installationId: Swift.String)
   @objc deinit
 }
